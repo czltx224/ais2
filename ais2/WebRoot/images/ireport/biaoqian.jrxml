@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="biaoqian" language="groovy" pageWidth="283" pageHeight="141" orientation="Landscape" columnWidth="283" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="xPath">
+		<![CDATA[/billLadings/printBeans/billLading]]>
+	</queryString>
+	<field name="imgBaseUrl" class="java.lang.String">
+		<fieldDescription><![CDATA[/billLadings/imgBaseUrl]]></fieldDescription>
+	</field>
+	<field name="flightMainNo" class="java.lang.String">
+		<fieldDescription><![CDATA[flightMainNo]]></fieldDescription>
+	</field>
+	<field name="addr" class="java.lang.String">
+		<fieldDescription><![CDATA[addr]]></fieldDescription>
+	</field>
+	<field name="consignee" class="java.lang.String">
+		<fieldDescription><![CDATA[consignee]]></fieldDescription>
+	</field>
+	<field name="piece" class="java.lang.String">
+		<fieldDescription><![CDATA[piece]]></fieldDescription>
+	</field>
+	<field name="faxInTime" class="java.lang.String">
+		<fieldDescription><![CDATA[faxInTime]]></fieldDescription>
+	</field>
+	<field name="printName" class="java.lang.String">
+		<fieldDescription><![CDATA[printName]]></fieldDescription>
+	</field>
+	<field name="printNum" class="java.lang.String">
+		<fieldDescription><![CDATA[printNum]]></fieldDescription>
+	</field>
+	<field name="printTime" class="java.lang.String">
+		<fieldDescription><![CDATA[printTime]]></fieldDescription>
+	</field>
+	<field name="printId" class="java.lang.String">
+		<fieldDescription><![CDATA[printId]]></fieldDescription>
+	</field>
+	<pageHeader>
+		<band height="189" splitType="Stretch">
+			<rectangle>
+				<reportElement x="66" y="40" width="195" height="116"/>
+			</rectangle>
+			<line>
+				<reportElement x="66" y="70" width="195" height="1"/>
+			</line>
+			<line>
+				<reportElement x="66" y="110" width="195" height="1"/>
+			</line>
+			<line>
+				<reportElement x="66" y="129" width="195" height="1"/>
+			</line>
+			<line>
+				<reportElement x="81" y="40" width="1" height="116"/>
+			</line>
+			<staticText>
+				<reportElement x="69" y="40" width="11" height="28"/>
+				<textElement/>
+				<text><![CDATA[运单]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="69" y="76" width="11" height="28"/>
+				<textElement/>
+				<text><![CDATA[目的]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="69" y="113" width="11" height="15"/>
+				<textElement/>
+				<text><![CDATA[收]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="69" y="128" width="11" height="28"/>
+				<textElement textAlignment="Left" rotation="None" markup="none">
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[始发]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement x="78" y="18" width="194" height="22"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="USPS" drawText="false" checksumRequired="false">
+					<jr:codeExpression><![CDATA["1234"]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<textField>
+				<reportElement x="85" y="47" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{flightMainNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="87" y="80" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{addr}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="94" y="111" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{consignee}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+</jasperReport>

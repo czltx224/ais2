@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+ 	
+ 	 <context-param>
+	    <param-name>webAppRootKey</param-name>
+	    <param-value>ais2.root</param-value>
+	  </context-param>
+ 		<!-- jwebap start -->
+	 <!-- 
+			<context-param>
+				<param-name>jwebap-config</param-name>
+				<param-value>/WEB-INF/jwebap.xml</param-value>
+			</context-param>
+			<listener>	
+				<listener-class>org.jwebap.startup.JwebapListener</listener-class>	
+			</listener>
+			<filter>
+				<filter-name>PageDetectFilter</filter-name>
+				<filter-class>org.jwebap.plugin.tracer.http.DetectFilter</filter-class>
+				<init-param>
+					<param-name>excludeUrls</param-name>
+					<param-value>/detect;/detect/*;*.js;*.jpg;*.htm;*.html;*.gif;*.png;*.css;*.swf</param-value>
+				</init-param>
+			</filter>
+			<filter-mapping>
+				<filter-name>PageDetectFilter</filter-name>
+				<url-pattern>/*</url-pattern>
+			</filter-mapping>
+		
+			<servlet>
+				<servlet-name>detect</servlet-name>
+				<servlet-class>org.jwebap.ui.controler.JwebapServlet</servlet-class>	
+			</servlet>
+		
+			<servlet-mapping>
+				<servlet-name>detect</servlet-name>
+				<url-pattern>/detect/*</url-pattern>
+			</servlet-mapping>
+			
+	 -->
+	<!-- jwebap end -->
+	
+	
+	<!-- 自写filter 解决乱码问题 start-->
+	<!--
+	<filter>
+		<filter-name>encodingFilter</filter-name> 
+			<filter-class>com.xbwl.common.filter.CipDetectFilter</filter-class> 
+			<init-param> 
+			    <param-name>charset</param-name> 
+			    <param-value>UTF-8</param-value> 
+		</init-param> 
+	</filter>
+	<filter-mapping>
+		<filter-name>encodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	  -->
+	<!--自写filter 解决乱码问题 end  -->
+ 	
+ 	
+ 	
+ 	<!-- LoginFilter & UrlAclFilter are optional. This is an example config. -->
+	<filter>
+		<filter-name>ralasafe/LoginFilter</filter-name>
+		<filter-class>com.xbwl.common.filter.LoginFilter</filter-class>
+		<init-param>
+			<param-name>loginPage</param-name>
+			<param-value>/login.jsp</param-value>
+		</init-param>
+		<init-param>
+			<param-name>isTest</param-name>
+			<param-value>false</param-value>
+		</init-param>
+	<!--<init-param>
+			<param-name>encryptMethod</param-name>
+			<param-value>md5hex</param-value>
+		</init-param>
+		  -->	
+		<init-param>
+			<param-name>uniqueFieldsParams</param-name>
+			<param-value>loginName</param-value>
+		</init-param>
+		<init-param>
+			<param-name>passwordParam</param-name>
+			<param-value>password</param-value>
+		</init-param>
+		<init-param>
+			<param-name>denyMessage</param-name>
+			<param-value>登陆失败，用户名密码不匹配！</param-value>
+		</init-param>
+		
+		<!--init-param>
+			<param-name>encryptMethod</param-name>
+			<param-value>shahex</param-value>
+		</init-param-->
+	</filter>
+	<!-- 
+	<filter>     
+    <filter-name>GzipJsFilter</filter-name>     
+    <filter-class>com.xbwl.common.filter.GzipJsFilter</filter-class>     
+    <init-param>     
+        <param-name>headers</param-name>     
+        <param-value>Content-Encoding=gzip</param-value>     
+    </init-param>   
+	</filter>   
+	 -->
+		<filter>  
+		 <filter-name>GzipAndCache</filter-name>  
+		 <filter-class>com.xbwl.common.filter.GzipAndCacheFilter</filter-class>  
+	</filter>  
+	<filter-mapping>  
+		 <filter-name>GzipAndCache</filter-name>  
+		 <url-pattern>/*</url-pattern>  
+	</filter-mapping> 
+
+	 
+	<filter>
+		<filter-name>ralasafe/UrlAclFilter</filter-name>
+		<filter-class>org.ralasafe.webFilter.UrlAclFilter</filter-class>
+		<init-param>
+			<param-name>loginPage</param-name>
+			<param-value>/login.jsp</param-value>
+		</init-param>
+		<init-param>
+			<param-name>denyPage</param-name>
+			<param-value>/ralasafe/demo/noPrivilege.jsp</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>ralasafe/LoginFilter</filter-name>
+		<url-pattern>*.action</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>ralasafe/UrlAclFilter</filter-name>
+		<url-pattern>/ralasafe/demo/*</url-pattern>
+	</filter-mapping>
+	
+	<!-- 
+	<filter-mapping>   
+		<filter-name>GzipJsFilter</filter-name>   
+		<url-pattern>*.gzjs</url-pattern>   
+	</filter-mapping> 
+	 -->  
+	<!-- End -->
+	
+<!--  	
+	<filter>
+		<filter-name>sessionOutFilter</filter-name>
+		<filter-class>com.xbwl.rbac.filter.SeesionOutFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>sessionOutFilter</filter-name>
+		<url-pattern>*.action</url-pattern>
+	</filter-mapping>
+	-->
+	
+	
+		<!-- openSessionInViewFilter 用于hibernate延迟加载控制 -->
+		<!-- 考虑性能问题，屏蔽此功能 -->
+	<!--  filter>
+		<filter-name>hibernateOpenSessionInViewFilter</filter-name>
+		<filter-class>
+			org.springframework.orm.hibernate3.support.OpenSessionInViewFilter
+		</filter-class>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>hibernateOpenSessionInViewFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping  -->
+	
+	<!-- end  openSessionInViewFilter-->
+	
+	
+	
+	<filter>
+		<filter-name>struts2CleanupFilter</filter-name>
+		<filter-class>org.apache.struts2.dispatcher.ActionContextCleanUp</filter-class>
+	</filter>
+
+	<filter>
+		<filter-name>struts2Filter</filter-name>
+		<filter-class>
+			org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter
+		</filter-class>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>struts2CleanupFilter</filter-name>
+		<url-pattern>*.action</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>struts2Filter</filter-name>
+		<url-pattern>*.action</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+	</filter-mapping>
+	
+	
+	
+	<!-- End -->
+	<servlet>
+		<servlet-name>basFlightServlet</servlet-name>
+		<servlet-class>com.xbwl.oper.edi.servlet.BasFlightServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>ralasafe/RalasafeService</servlet-name>
+		<servlet-class>org.ralasafe.ui.server.RalasafeServiceImpl</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>logout</servlet-name>
+		<servlet-class>com.xbwl.rbac.web.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ralasafe/DesignerServlet</servlet-name>
+		<servlet-class>org.ralasafe.servlet.DesignerServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>ralasafe/UserTypeMngServlet</servlet-name>
+		<servlet-class> org.ralasafe.servlet.UserTypeMngServlet </servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ralasafe/UserTypeInstallServlet</servlet-name>
+		<servlet-class> org.ralasafe.servlet.UserTypeInstallServlet 
+		</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ralasafe/StartupServlet</servlet-name>
+		<servlet-class> org.ralasafe.servlet.StartupServlet</servlet-class>
+		<init-param>
+			<param-name>repositoryDir</param-name>
+			<param-value>f:/xml</param-value>
+		</init-param>
+		<init-param>
+			<param-name>secured</param-name>
+			<param-value>false</param-value>
+		</init-param>
+		<init-param>
+			<param-name>queryLimit</param-name>
+			<param-value>5000</param-value>
+		</init-param>
+		<load-on-startup>4</load-on-startup>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>StaticContentServlet</servlet-name>
+		<servlet-class>com.xbwl.common.servlet.StaticContentServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>RemoteContentServlet</servlet-name>
+		<servlet-class>com.xbwl.common.servlet.RemoteContentServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>basFlightServlet</servlet-name>
+		<url-pattern>/basFlightServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>StaticContentServlet</servlet-name>
+		<url-pattern>/static-content</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RemoteContentServlet</servlet-name>
+		<url-pattern>/remote-content</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>logout</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ralasafe/RalasafeService</servlet-name>
+		<url-pattern>/ralasafe/RalasafeService</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ralasafe/DesignerServlet</servlet-name>
+		<url-pattern>/ralasafe/designer</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ralasafe/UserTypeMngServlet</servlet-name>
+		<url-pattern>/ralasafe/userTypeMng</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ralasafe/UserTypeInstallServlet</servlet-name>
+		<url-pattern>/ralasafe/userTypeInstall</url-pattern>
+	</servlet-mapping>
+
+	<!-- hessian start -->
+	<servlet>  
+	    <servlet-name>Hessian</servlet-name>  
+	    <servlet-class> org.springframework.web.servlet.DispatcherServlet</servlet-class> 
+	    <init-param>   
+        <param-name>contextConfigLocation</param-name>   
+        <param-value>   
+            classpath:hessian/remoting-servlet.xml  
+        </param-value>   
+    </init-param>  
+	    <load-on-startup>1</load-on-startup>  
+	</servlet>  
+           
+	<servlet-mapping>  
+	    <servlet-name>Hessian</servlet-name>  
+	    <url-pattern>/hessian/*</url-pattern>  
+	</servlet-mapping> 
+ 	<!-- hessian end -->
+	
+	
+	<filter>
+		<filter-name>encodingFilter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+		<init-param>
+			<param-name>forceEncoding</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	
+
+	
+	
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath*:applicationContext.xml</param-value>
+	</context-param>
+	
+	<context-param>
+        <param-name>log4jConfigLocation</param-name>
+        <param-value>/WEB-INF/classes/log4j.xml</param-value>
+    </context-param>
+	
+    <servlet>
+    	<servlet-name>VerifyCodeServlet</servlet-name>
+    	<servlet-class>
+    		com.cndatacom.common.web.servlet.VerifyCodeServlet
+    	</servlet-class>
+    </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>JnlpServlet</servlet-name>
+    <servlet-class>com.xbwl.common.servlet.JnlpServlet</servlet-class>
+  </servlet>
+  <!--
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SvnServlet</servlet-name>
+    <servlet-class>com.xbwl.common.servlet.SvnServlet</servlet-class>
+    <load-on-startup>4</load-on-startup>
+  </servlet>
+  -->
+
+
+
+    
+    <servlet-mapping>
+    	<servlet-name>VerifyCodeServlet</servlet-name>
+    	<url-pattern>/sysregister/verifyCodeServlet</url-pattern>
+    </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>JnlpServlet</servlet-name>
+    <url-pattern>/servlet/jnlp</url-pattern>
+  </servlet-mapping>
+ <!-- 
+ <servlet-mapping>
+    <servlet-name>SvnServlet</servlet-name>
+    <url-pattern>/servlet/svnServlet</url-pattern>
+  </servlet-mapping>
+ --> 
+	
+	<listener>
+		<listener-class>
+			org.springframework.web.context.ContextLoaderListener
+		</listener-class>
+	</listener>
+	
+	<listener>
+        <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
+    </listener>
+	
+	<listener>
+		<listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
+	</listener>
+	
+	<error-page>
+		<error-code>500</error-code>
+		<location>/common/500.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/common/404.jsp</location>
+	</error-page>
+
+	<session-config>
+		<session-timeout>-1</session-timeout>
+	</session-config>
+
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>ralasafe/index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+		<welcome-file>login.jsp</welcome-file>
+	<!-- 	<welcome-file>index.html</welcome-file> -->
+	</welcome-file-list>
+
+</web-app>

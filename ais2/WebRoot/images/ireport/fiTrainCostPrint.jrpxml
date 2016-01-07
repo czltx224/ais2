@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE jasperPrint PUBLIC "-//JasperReports//DTD JasperPrint//EN" "http://jasperreports.sourceforge.net/dtds/jasperprint.dtd">
+
+<jasperPrint name="fipaid" pageWidth="620" pageHeight="396" topMargin="10" leftMargin="10" bottomMargin="10" rightMargin="10" locale="zh_CN" timezone="Asia/Shanghai">
+	<property name="net.sf.jasperreports.export.xml.start.page.index" value="0"/>
+	<property name="net.sf.jasperreports.export.xml.end.page.index" value="0"/>
+	<property name="net.sf.jasperreports.export.xml.page.count" value="1"/>
+	<origin band="background"/>
+	<origin band="title"/>
+	<origin band="columnHeader"/>
+	<origin band="detail"/>
+	<origin band="pageFooter"/>
+	<origin band="summary"/>
+	<page>
+		<text textAlignment="Center" textHeight="32.777344">
+			<reportElement x="10" y="10" width="600" height="38" origin="1"/>
+			<font size="24" isBold="true" isItalic="false"/>
+			<textContent><![CDATA[配送中心中转成本付款报表]]></textContent>
+		</text>
+		<line>
+			<reportElement x="19" y="73" width="555" height="1" origin="2"/>
+		</line>
+		<line>
+			<reportElement x="19" y="48" width="555" height="1" origin="2"/>
+		</line>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="20" y="49" width="51" height="23" origin="2"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[批次号]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="151" y="49" width="121" height="23" origin="2"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[收货人信息]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="273" y="49" width="93" height="23" origin="2"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[中转客商]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="398" y="49" width="31" height="23" origin="2"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[重量]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="430" y="49" width="48" height="23" origin="2"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[金额]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="529" y="49" width="44" height="24" origin="2"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[来源单号]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="73" y="49" width="78" height="23" origin="2"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[配送单号]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="367" y="49" width="31" height="23" origin="2"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[件数]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="479" y="49" width="48" height="23" origin="2"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[数据来源]]></textContent>
+		</text>
+		<line>
+			<reportElement key="line-24" x="19" y="48" width="1" height="25" origin="2"/>
+		</line>
+		<line>
+			<reportElement key="line-24" x="72" y="48" width="1" height="25" origin="2"/>
+		</line>
+		<line>
+			<reportElement key="line-24" x="272" y="48" width="1" height="25" origin="2"/>
+		</line>
+		<line>
+			<reportElement key="line-24" x="397" y="48" width="1" height="25" origin="2"/>
+		</line>
+		<line>
+			<reportElement key="line-24" x="429" y="48" width="1" height="25" origin="2"/>
+		</line>
+		<line>
+			<reportElement key="line-24" x="478" y="48" width="1" height="25" origin="2"/>
+		</line>
+		<line>
+			<reportElement key="line-24" x="527" y="48" width="1" height="25" origin="2"/>
+		</line>
+		<line>
+			<reportElement key="line-24" x="151" y="48" width="1" height="25" origin="2"/>
+		</line>
+		<line>
+			<reportElement key="line-24" x="573" y="48" width="1" height="25" origin="2"/>
+		</line>
+		<line>
+			<reportElement key="line-24" x="366" y="48" width="1" height="25" origin="2"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="19" y="74" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="72" y="74" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="272" y="74" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="366" y="74" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="429" y="74" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="478" y="74" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="527" y="74" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="573" y="74" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="151" y="74" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="397" y="74" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement x="19" y="92" width="555" height="1" origin="3"/>
+		</line>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="20" y="74" width="52" height="18" origin="3"/>
+			<textContent><![CDATA[361]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="73" y="74" width="78" height="19" origin="3"/>
+			<textContent><![CDATA[100001417]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="152" y="74" width="120" height="18" origin="3"/>
+			<textContent><![CDATA[lll/中山市南区]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="272" y="74" width="93" height="18" origin="3"/>
+			<textContent><![CDATA[中山华航]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="367" y="74" width="30" height="18" origin="3"/>
+			<textContent><![CDATA[243]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="398" y="74" width="31" height="18" origin="3"/>
+			<textContent><![CDATA[243.0]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="430" y="74" width="48" height="18" origin="3"/>
+			<textContent><![CDATA[78.0]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="527" y="74" width="46" height="18" origin="3"/>
+			<textContent><![CDATA[29151]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="479" y="74" width="47" height="18" origin="3"/>
+			<textContent><![CDATA[返货登记]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="0.0">
+			<reportElement x="274" y="74" width="92" height="18" origin="3"/>
+			<textContent><![CDATA[]]></textContent>
+		</text>
+		<line>
+			<reportElement key="line-25" x="19" y="93" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="72" y="93" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="272" y="93" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="366" y="93" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="429" y="93" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="478" y="93" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="527" y="93" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="573" y="93" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="151" y="93" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="397" y="93" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement x="19" y="111" width="555" height="1" origin="3"/>
+		</line>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="20" y="93" width="52" height="18" origin="3"/>
+			<textContent><![CDATA[362]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="73" y="93" width="78" height="19" origin="3"/>
+			<textContent><![CDATA[100001415]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="152" y="93" width="120" height="18" origin="3"/>
+			<textContent><![CDATA[李征/广州市番禺区]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="272" y="93" width="93" height="18" origin="3"/>
+			<textContent><![CDATA[惠州管到佳]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="367" y="93" width="30" height="18" origin="3"/>
+			<textContent><![CDATA[10]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="398" y="93" width="31" height="18" origin="3"/>
+			<textContent><![CDATA[1000.0]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="430" y="93" width="48" height="18" origin="3"/>
+			<textContent><![CDATA[350.0]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="0.0">
+			<reportElement x="527" y="93" width="46" height="18" origin="3"/>
+			<textContent><![CDATA[]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="479" y="93" width="47" height="18" origin="3"/>
+			<textContent><![CDATA[传真录入]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="0.0">
+			<reportElement x="274" y="93" width="92" height="18" origin="3"/>
+			<textContent><![CDATA[]]></textContent>
+		</text>
+		<line>
+			<reportElement key="line-25" x="19" y="112" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="72" y="112" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="272" y="112" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="366" y="112" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="429" y="112" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="478" y="112" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="527" y="112" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="573" y="112" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="151" y="112" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="397" y="112" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement x="19" y="130" width="555" height="1" origin="3"/>
+		</line>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="20" y="112" width="52" height="18" origin="3"/>
+			<textContent><![CDATA[354]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="73" y="112" width="78" height="19" origin="3"/>
+			<textContent><![CDATA[100001402]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="152" y="112" width="120" height="18" origin="3"/>
+			<textContent><![CDATA[张三/中山市板芙]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="272" y="112" width="93" height="18" origin="3"/>
+			<textContent><![CDATA[中山华航]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="367" y="112" width="30" height="18" origin="3"/>
+			<textContent><![CDATA[100]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="398" y="112" width="31" height="18" origin="3"/>
+			<textContent><![CDATA[100.0]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="430" y="112" width="48" height="18" origin="3"/>
+			<textContent><![CDATA[35.0]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="0.0">
+			<reportElement x="527" y="112" width="46" height="18" origin="3"/>
+			<textContent><![CDATA[]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="479" y="112" width="47" height="18" origin="3"/>
+			<textContent><![CDATA[传真录入]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="0.0">
+			<reportElement x="274" y="112" width="92" height="18" origin="3"/>
+			<textContent><![CDATA[]]></textContent>
+		</text>
+		<line>
+			<reportElement key="line-25" x="19" y="131" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="72" y="131" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="272" y="131" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="366" y="131" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="429" y="131" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="478" y="131" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="527" y="131" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="573" y="131" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="151" y="131" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="397" y="131" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement x="19" y="149" width="555" height="1" origin="3"/>
+		</line>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="20" y="131" width="52" height="18" origin="3"/>
+			<textContent><![CDATA[352]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="73" y="131" width="78" height="19" origin="3"/>
+			<textContent><![CDATA[100001371]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="152" y="131" width="120" height="18" origin="3"/>
+			<textContent><![CDATA[李征/广州市番禺区]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="272" y="131" width="93" height="18" origin="3"/>
+			<textContent><![CDATA[惠州管到佳]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="367" y="131" width="30" height="18" origin="3"/>
+			<textContent><![CDATA[1]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="398" y="131" width="31" height="18" origin="3"/>
+			<textContent><![CDATA[20.0]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="430" y="131" width="48" height="18" origin="3"/>
+			<textContent><![CDATA[5.0]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="0.0">
+			<reportElement x="527" y="131" width="46" height="18" origin="3"/>
+			<textContent><![CDATA[]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="479" y="131" width="47" height="18" origin="3"/>
+			<textContent><![CDATA[传真录入]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="0.0">
+			<reportElement x="274" y="131" width="92" height="18" origin="3"/>
+			<textContent><![CDATA[]]></textContent>
+		</text>
+		<line>
+			<reportElement key="line-25" x="19" y="150" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="72" y="150" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="272" y="150" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="366" y="150" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="429" y="150" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="478" y="150" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="527" y="150" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="573" y="150" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="151" y="150" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="397" y="150" width="1" height="18" origin="3"/>
+		</line>
+		<line>
+			<reportElement x="19" y="168" width="555" height="1" origin="3"/>
+		</line>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="20" y="150" width="52" height="18" origin="3"/>
+			<textContent><![CDATA[401]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="73" y="150" width="78" height="19" origin="3"/>
+			<textContent><![CDATA[100001351]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="152" y="150" width="120" height="18" origin="3"/>
+			<textContent><![CDATA[lll/中山市南区]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="272" y="150" width="93" height="18" origin="3"/>
+			<textContent><![CDATA[中山华航]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="367" y="150" width="30" height="18" origin="3"/>
+			<textContent><![CDATA[110]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="398" y="150" width="31" height="18" origin="3"/>
+			<textContent><![CDATA[110.0]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="430" y="150" width="48" height="18" origin="3"/>
+			<textContent><![CDATA[20.0]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="0.0">
+			<reportElement x="527" y="150" width="46" height="18" origin="3"/>
+			<textContent><![CDATA[]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="479" y="150" width="47" height="18" origin="3"/>
+			<textContent><![CDATA[传真录入]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="0.0">
+			<reportElement x="274" y="150" width="92" height="18" origin="3"/>
+			<textContent><![CDATA[]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="20" y="171" width="51" height="15" origin="5"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[件数合计:]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="103" y="171" width="50" height="15" origin="5"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[重量合计:]]></textContent>
+		</text>
+		<text textHeight="13.657227">
+			<reportElement x="277" y="171" width="10" height="15" origin="5"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[元]]></textContent>
+		</text>
+		<text textHeight="13.657227">
+			<reportElement x="197" y="171" width="50" height="15" origin="5"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[金额合计:]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement key="staticText-30" x="20" y="187" width="49" height="15" origin="5"/>
+			<font isBold="true" isItalic="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+			<textContent><![CDATA[打 印 人:]]></textContent>
+		</text>
+		<text textHeight="13.657227">
+			<reportElement key="staticText-31" x="139" y="187" width="49" height="15" origin="5"/>
+			<font isBold="true" isItalic="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+			<textContent><![CDATA[打印时间:]]></textContent>
+		</text>
+		<text textHeight="13.657227">
+			<reportElement x="322" y="187" width="50" height="15" origin="5"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[签字:]]></textContent>
+		</text>
+		<line>
+			<reportElement x="19" y="186" width="555" height="1" origin="5"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="573" y="169" width="1" height="18" origin="5"/>
+		</line>
+		<line>
+			<reportElement key="line-25" x="19" y="169" width="1" height="18" origin="5"/>
+		</line>
+		<text verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="69" y="171" width="34" height="15" origin="5"/>
+			<textContent><![CDATA[464]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="153" y="171" width="35" height="15" origin="5"/>
+			<textContent><![CDATA[1473.0]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="247" y="171" width="30" height="14" origin="5"/>
+			<textContent><![CDATA[488.0]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="69" y="187" width="54" height="15" origin="5"/>
+			<textContent><![CDATA[舒稳]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="187" y="187" width="100" height="15" origin="5"/>
+			<textContent><![CDATA[2012-05-14 14:10:09]]></textContent>
+		</text>
+		<text textHeight="10.925781">
+			<reportElement key="staticText-38" x="516" y="368" width="11" height="12" origin="4"/>
+			<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+			<textContent><![CDATA[第]]></textContent>
+		</text>
+		<text textHeight="10.925781">
+			<reportElement key="staticText-39" x="545" y="368" width="11" height="12" origin="4"/>
+			<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+			<textContent><![CDATA[页]]></textContent>
+		</text>
+		<text textHeight="10.925781">
+			<reportElement key="staticText-39" x="505" y="368" width="11" height="12" origin="4"/>
+			<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+			<textContent><![CDATA[页]]></textContent>
+		</text>
+		<text textHeight="10.925781">
+			<reportElement key="staticText-38" x="480" y="368" width="11" height="12" origin="4"/>
+			<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+			<textContent><![CDATA[共]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="10.925781" valueClass="java.lang.Integer">
+			<reportElement x="491" y="368" width="14" height="12" origin="4"/>
+			<font size="8"/>
+			<textContent><![CDATA[1]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="10.925781" valueClass="java.lang.Integer">
+			<reportElement key="textField" x="527" y="368" width="18" height="12" origin="4"/>
+			<font size="8"/>
+			<textContent><![CDATA[1]]></textContent>
+		</text>
+	</page>
+</jasperPrint>

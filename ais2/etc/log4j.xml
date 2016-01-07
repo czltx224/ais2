@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<appender name="stdout" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="Threshold" value="ERROR"/>
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %c %l %-5p: %m%n" />
+			<!-- "%-5p: [%t] [%c{3}.%M(%L)] | %m%n" -->
+		</layout>
+		 <filter class="org.apache.log4j.varia.LevelRangeFilter">   
+		   <param name="LevelMax" value="ERROR"/>   
+		   <param name="LevelMin" value="WARN"/>   
+		  </filter> 
+	</appender>
+
+	<appender name="imusic" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="${webapp.root}/ais.log" />
+		<param name="DatePattern" value="'ais.'yyyy-MM-dd'.log'" />
+		<param name="Append" value="true" />
+		<param name="Threshold" value="info"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="[%d{yyyy-MM-dd HH:mm:ss} %-5p] [%t] (%c:%L) - %m%n" />
+		</layout>
+	</appender>
+	
+	<appender name="html" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="${webapp.root}/log.htm" />
+		<param name="DatePattern" value="yyyy-MM-dd'.htm'" />
+		<param name="Append" value="true" />
+		<param name="Threshold" value="ERROR"/>
+		<layout class="org.apache.log4j.HTMLLayout">
+			<param name="ConversionPattern"
+				value="[%d{yyyy-MM-dd HH:mm:ss} %-5p] [%t] (%c:%L) - %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="systemout" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="${webapp.root}/system.log" />
+		<param name="DatePattern" value="'system.'yyyy-MM-dd'.log'" />
+		<param name="Append" value="true" />
+		<param name="Threshold" value="error"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="[%d{yyyy-MM-dd HH:mm:ss}]" />
+		</layout>
+	</appender>
+
+	<appender name="mail" class="org.apache.log4j.net.SMTPAppender">
+		<param name="threshold" value="debug" />
+		<param name="BufferSize" value="512" /><!-- 单位K -->
+		<param name="From" value="zhaowenqiang523@sina.com" />
+		<param name="SMTPHost" value="smtp.sina.com" />
+		<param name="Subject" value="log" />
+		<param name="To" value="8720759@qq.com" />
+		<param name="SMTPUsername" value="zhaowenqiang523" />
+		<param name="SMTPPassword" value="1234567890" />
+		<layout class="com.xbwl.common.log4j.MailPatternLayout">
+			<param name="ConversionPattern" value="%-d{yyyy-MM-dd HH:mm:ss.SSS} [%p]-[%c:%L] %m%n" />
+		</layout>
+	</appender>
+
+	<category name="com.xbwl">
+		<priority value="WARN" />
+		<appender-ref ref="systemout" />
+	</category>
+ 	<category name="com.opensymphony.xwork2">
+		<priority value="ERROR" />
+		<appender-ref ref="systemout" /> 
+	<!--	<appender-ref ref="html" />-->
+	</category>
+	
+	 <category name="com.opensymphony">
+		<priority value="ERROR" />
+		<appender-ref ref="systemout" /> 
+		<!--<appender-ref ref="html" />-->
+	</category>
+	
+	<category name="org.exolab.castor">
+		<priority value="ERROR" />
+	<!--	<appender-ref ref="systemout" /> -->
+		<appender-ref ref="html" />
+	</category>
+	
+	<category name="org.springframework">
+		<priority value="ERROR" />
+	<!--  	<appender-ref ref="systemout" />-->
+		<appender-ref ref="html" />
+	</category>
+	<category name="org.apache.commons">
+		<priority value="ERROR" />
+	<!--	<appender-ref ref="systemout" /> -->
+		<appender-ref ref="html" />
+	</category>
+	
+	<category name="org.dozer">
+		<priority value="ERROR" />
+	<!--	<appender-ref ref="systemout" /> -->
+		<appender-ref ref="html" />
+	</category>
+	<category name="org.apache.struts2">
+		<priority value="ERROR" />
+		<appender-ref ref="systemout" /> 
+	<!--	<appender-ref ref="html" />-->
+	</category>
+	
+	
+	
+	<category name="org.hibernate">
+		<priority value="ERROR" />
+	<!--	<appender-ref ref="systemout" /> -->
+		<appender-ref ref="html" />	
+	</category>
+	
+	<root>
+		<appender-ref ref="stdout" />
+	</root>
+
+
+</log4j:configuration>

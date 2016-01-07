@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="fipaid" language="groovy" pageWidth="620" pageHeight="396" columnWidth="600" leftMargin="10" rightMargin="10" topMargin="10" bottomMargin="10">
+	<property name="ireport.zoom" value="4.0"/>
+	<property name="ireport.x" value="1376"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="xPath">
+		<![CDATA[/billLadings/printBeans/billLading]]>
+	</queryString>
+	<field name="batchNo" class="java.lang.String">
+		<fieldDescription><![CDATA[batchNo]]></fieldDescription>
+	</field>
+	<field name="dno" class="java.lang.String">
+		<fieldDescription><![CDATA[dno]]></fieldDescription>
+	</field>
+	<field name="consigneeInfo" class="java.lang.String">
+		<fieldDescription><![CDATA[consigneeInfo]]></fieldDescription>
+	</field>
+	<field name="customer" class="java.lang.String">
+		<fieldDescription><![CDATA[customer]]></fieldDescription>
+	</field>
+	<field name="piece" class="java.lang.String">
+		<fieldDescription><![CDATA[piece]]></fieldDescription>
+	</field>
+	<field name="weight" class="java.lang.String">
+		<fieldDescription><![CDATA[weight]]></fieldDescription>
+	</field>
+	<field name="amount" class="java.lang.String">
+		<fieldDescription><![CDATA[amount]]></fieldDescription>
+	</field>
+	<field name="sourceData" class="java.lang.String">
+		<fieldDescription><![CDATA[sourceData]]></fieldDescription>
+	</field>
+	<field name="totalPiece" class="java.lang.String">
+		<fieldDescription><![CDATA[totalPiece]]></fieldDescription>
+	</field>
+	<field name="totalWeight" class="java.lang.String">
+		<fieldDescription><![CDATA[totalWeight]]></fieldDescription>
+	</field>
+	<field name="totalAmount" class="java.lang.String">
+		<fieldDescription><![CDATA[totalAmount]]></fieldDescription>
+	</field>
+	<field name="printDateString" class="java.lang.String">
+		<fieldDescription><![CDATA[printDateString]]></fieldDescription>
+	</field>
+	<field name="printName" class="java.lang.String">
+		<fieldDescription><![CDATA[printName]]></fieldDescription>
+	</field>
+	<field name="printNum" class="java.lang.String">
+		<fieldDescription><![CDATA[printNum]]></fieldDescription>
+	</field>
+	<field name="printId" class="java.lang.String">
+		<fieldDescription><![CDATA[printId]]></fieldDescription>
+	</field>
+	<field name="sourceNo" class="java.lang.String">
+		<fieldDescription><![CDATA[sourceNo]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="38" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="600" height="38"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[配送中心中转成本付款报表]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="26" splitType="Stretch">
+			<line>
+				<reportElement x="9" y="25" width="555" height="1"/>
+			</line>
+			<line>
+				<reportElement x="9" y="0" width="555" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="10" y="1" width="51" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[批次号]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="141" y="1" width="121" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[收货人信息]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="263" y="1" width="93" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[中转客商]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="388" y="1" width="31" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[重量]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="1" width="48" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[金额]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="519" y="1" width="44" height="24"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[来源单号]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="63" y="1" width="78" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[配送单号]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="357" y="1" width="31" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[件数]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="469" y="1" width="48" height="23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[数据来源]]></text>
+			</staticText>
+			<line>
+				<reportElement key="line-24" x="9" y="0" width="1" height="25"/>
+			</line>
+			<line>
+				<reportElement key="line-24" x="62" y="0" width="1" height="25"/>
+			</line>
+			<line>
+				<reportElement key="line-24" x="262" y="0" width="1" height="25"/>
+			</line>
+			<line>
+				<reportElement key="line-24" x="387" y="0" width="1" height="25"/>
+			</line>
+			<line>
+				<reportElement key="line-24" x="419" y="0" width="1" height="25"/>
+			</line>
+			<line>
+				<reportElement key="line-24" x="468" y="0" width="1" height="25"/>
+			</line>
+			<line>
+				<reportElement key="line-24" x="517" y="0" width="1" height="25"/>
+			</line>
+			<line>
+				<reportElement key="line-24" x="141" y="0" width="1" height="25"/>
+			</line>
+			<line>
+				<reportElement key="line-24" x="563" y="0" width="1" height="25"/>
+			</line>
+			<line>
+				<reportElement key="line-24" x="356" y="0" width="1" height="25"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="19" splitType="Stretch">
+			<line>
+				<reportElement key="line-25" stretchType="RelativeToTallestObject" x="9" y="0" width="1" height="18"/>
+			</line>
+			<line>
+				<reportElement key="line-25" stretchType="RelativeToTallestObject" x="62" y="0" width="1" height="18"/>
+			</line>
+			<line>
+				<reportElement key="line-25" stretchType="RelativeToTallestObject" x="262" y="0" width="1" height="18"/>
+			</line>
+			<line>
+				<reportElement key="line-25" stretchType="RelativeToTallestObject" x="356" y="0" width="1" height="18"/>
+			</line>
+			<line>
+				<reportElement key="line-25" stretchType="RelativeToTallestObject" x="419" y="0" width="1" height="18"/>
+			</line>
+			<line>
+				<reportElement key="line-25" stretchType="RelativeToTallestObject" x="468" y="0" width="1" height="18"/>
+			</line>
+			<line>
+				<reportElement key="line-25" stretchType="RelativeToTallestObject" x="517" y="0" width="1" height="18"/>
+			</line>
+			<line>
+				<reportElement key="line-25" stretchType="RelativeToTallestObject" x="563" y="0" width="1" height="18"/>
+			</line>
+			<line>
+				<reportElement key="line-25" stretchType="RelativeToTallestObject" x="141" y="0" width="1" height="18"/>
+			</line>
+			<line>
+				<reportElement key="line-25" stretchType="RelativeToTallestObject" x="387" y="0" width="1" height="18"/>
+			</line>
+			<line>
+				<reportElement x="9" y="18" width="555" height="1"/>
+			</line>
+			<textField>
+				<reportElement x="10" y="0" width="52" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{batchNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="63" y="0" width="78" height="19"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{dno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="142" y="0" width="120" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{consigneeInfo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="262" y="0" width="93" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{customer}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="357" y="0" width="30" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{piece}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="388" y="0" width="31" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{weight}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="420" y="0" width="48" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{amount}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="517" y="0" width="46" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{sourceNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="469" y="0" width="47" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{sourceData}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="264" y="0" width="92" height="18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="25" splitType="Stretch">
+			<staticText>
+				<reportElement key="staticText-38" x="506" y="7" width="11" height="12"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[第]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-39" x="535" y="7" width="11" height="12"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[页]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-39" x="495" y="7" width="11" height="12"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[页]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-38" x="470" y="7" width="11" height="12"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[共]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="481" y="7" width="14" height="12"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Integer"><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="textField" x="517" y="7" width="18" height="12"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Integer"><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="37" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="2" width="51" height="15"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[件数合计:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="93" y="2" width="50" height="15"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[重量合计:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="267" y="2" width="10" height="15"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[元]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="187" y="2" width="50" height="15"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[金额合计:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-30" x="10" y="18" width="49" height="15"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true" isItalic="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[打 印 人:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-31" x="129" y="18" width="49" height="15"/>
+				<textElement>
+					<font isBold="true" isItalic="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[打印时间:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="312" y="18" width="50" height="15"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[签字:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="9" y="17" width="555" height="1"/>
+			</line>
+			<line>
+				<reportElement key="line-25" stretchType="RelativeToTallestObject" x="563" y="0" width="1" height="18"/>
+			</line>
+			<line>
+				<reportElement key="line-25" stretchType="RelativeToTallestObject" x="9" y="0" width="1" height="18"/>
+			</line>
+			<textField>
+				<reportElement x="59" y="2" width="34" height="15"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{totalPiece}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="143" y="2" width="35" height="15"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{totalWeight}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="237" y="2" width="30" height="14"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{totalAmount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="59" y="18" width="54" height="15"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{printName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="177" y="18" width="100" height="15"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{printDateString}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

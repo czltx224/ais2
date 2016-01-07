@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE jasperPrint PUBLIC "-//JasperReports//DTD JasperPrint//EN" "http://jasperreports.sourceforge.net/dtds/jasperprint.dtd">
+
+<jasperPrint name="report_r2" pageWidth="595" pageHeight="842" topMargin="20" leftMargin="20" bottomMargin="20" rightMargin="20" locale="zh_CN" timezone="Asia/Shanghai">
+	<property name="net.sf.jasperreports.export.xml.start.page.index" value="0"/>
+	<property name="net.sf.jasperreports.export.xml.end.page.index" value="0"/>
+	<property name="net.sf.jasperreports.export.xml.page.count" value="1"/>
+	<origin band="background"/>
+	<origin band="title"/>
+	<origin band="pageHeader"/>
+	<origin band="detail"/>
+	<origin band="summary"/>
+	<page>
+		<text verticalAlignment="Middle" textHeight="16.388672">
+			<reportElement x="20" y="68" width="113" height="29" origin="1"/>
+			<font size="12" isBold="true"/>
+			<textContent><![CDATA[代理联系人：]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="16.388672">
+			<reportElement x="217" y="68" width="112" height="29" origin="1"/>
+			<font size="12" isBold="true"/>
+			<textContent><![CDATA[联系电话：]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="16.388672">
+			<reportElement x="455" y="67" width="120" height="30" origin="1"/>
+			<font size="12" isBold="true"/>
+			<textContent><![CDATA[负责人：]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="27.314453">
+			<reportElement x="21" y="20" width="553" height="48" origin="1"/>
+			<font size="20" isBold="true"/>
+			<textContent><![CDATA[广州新邦-上海嘉星X对账单(2012-02-14至2012-02-14)]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="16.388672">
+			<reportElement x="505" y="68" width="69" height="29" origin="1"/>
+			<font size="12" isBold="true"/>
+			<textContent><![CDATA[汪洋]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="15.022949">
+			<reportElement x="326" y="97" width="48" height="23" origin="2"/>
+			<font size="11" isBold="true"/>
+			<textContent><![CDATA[代收货款]]></textContent>
+		</text>
+		<line>
+			<reportElement x="263" y="96" width="1" height="23" origin="2"/>
+		</line>
+		<line>
+			<reportElement x="374" y="96" width="1" height="23" origin="2"/>
+		</line>
+		<line>
+			<reportElement x="296" y="96" width="1" height="23" origin="2"/>
+		</line>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="15.022949">
+			<reportElement x="82" y="97" width="58" height="22" origin="2"/>
+			<font size="11" isBold="true"/>
+			<textContent><![CDATA[运单号]]></textContent>
+		</text>
+		<line>
+			<reportElement x="422" y="96" width="1" height="23" origin="2"/>
+		</line>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="15.022949">
+			<reportElement x="374" y="97" width="49" height="23" origin="2"/>
+			<font size="11" isBold="true"/>
+			<textContent><![CDATA[预付提送]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="15.022949">
+			<reportElement x="21" y="96" width="60" height="23" origin="2"/>
+			<font size="11" isBold="true"/>
+			<textContent><![CDATA[发货代理]]></textContent>
+		</text>
+		<line>
+			<reportElement x="20" y="96" width="1" height="24" origin="2"/>
+		</line>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="15.022949">
+			<reportElement x="195" y="96" width="42" height="23" origin="2"/>
+			<font size="11" isBold="true"/>
+			<textContent><![CDATA[编号]]></textContent>
+		</text>
+		<line>
+			<reportElement x="81" y="96" width="1" height="23" origin="2"/>
+		</line>
+		<line>
+			<reportElement x="21" y="119" width="553" height="1" origin="2"/>
+		</line>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="15.022949">
+			<reportElement x="264" y="96" width="33" height="23" origin="2"/>
+			<font size="11" isBold="true"/>
+			<textContent><![CDATA[重量]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="15.022949">
+			<reportElement x="141" y="96" width="53" height="23" origin="2"/>
+			<font size="11" isBold="true"/>
+			<textContent><![CDATA[分单号]]></textContent>
+		</text>
+		<line>
+			<reportElement x="21" y="96" width="553" height="1" origin="2"/>
+		</line>
+		<line>
+			<reportElement x="237" y="96" width="1" height="23" origin="2"/>
+		</line>
+		<line>
+			<reportElement x="194" y="96" width="1" height="23" origin="2"/>
+		</line>
+		<line>
+			<reportElement x="520" y="96" width="1" height="23" origin="2"/>
+		</line>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="15.022949">
+			<reportElement x="238" y="96" width="26" height="23" origin="2"/>
+			<font size="11" isBold="true"/>
+			<textContent><![CDATA[件数]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="15.022949">
+			<reportElement x="472" y="96" width="48" height="23" origin="2"/>
+			<font size="11" isBold="true"/>
+			<textContent><![CDATA[收货人]]></textContent>
+		</text>
+		<line>
+			<reportElement x="471" y="96" width="1" height="23" origin="2"/>
+		</line>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="15.022949">
+			<reportElement x="521" y="96" width="52" height="23" origin="2"/>
+			<font size="11" isBold="true"/>
+			<textContent><![CDATA[录入时间]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="15.022949">
+			<reportElement x="422" y="97" width="52" height="23" origin="2"/>
+			<font size="11" isBold="true"/>
+			<textContent><![CDATA[预付增值]]></textContent>
+		</text>
+		<line>
+			<reportElement x="140" y="97" width="1" height="23" origin="2"/>
+		</line>
+		<line>
+			<reportElement x="574" y="96" width="1" height="24" origin="2"/>
+		</line>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="15.022949">
+			<reportElement x="297" y="97" width="29" height="22" origin="2"/>
+			<font size="11" isBold="true"/>
+			<textContent><![CDATA[体积]]></textContent>
+		</text>
+		<line>
+			<reportElement x="574" y="120" width="1" height="17" origin="3"/>
+		</line>
+		<line>
+			<reportElement x="237" y="120" width="1" height="16" origin="3"/>
+		</line>
+		<line>
+			<reportElement x="374" y="120" width="1" height="16" origin="3"/>
+		</line>
+		<line>
+			<reportElement x="81" y="120" width="1" height="16" origin="3"/>
+		</line>
+		<line>
+			<reportElement x="263" y="120" width="1" height="16" origin="3"/>
+		</line>
+		<line>
+			<reportElement x="422" y="120" width="1" height="16" origin="3"/>
+		</line>
+		<line>
+			<reportElement x="20" y="120" width="1" height="16" origin="3"/>
+		</line>
+		<line>
+			<reportElement x="296" y="120" width="1" height="17" origin="3"/>
+		</line>
+		<line>
+			<reportElement x="20" y="136" width="555" height="1" origin="3"/>
+		</line>
+		<line>
+			<reportElement x="194" y="120" width="1" height="16" origin="3"/>
+		</line>
+		<line>
+			<reportElement x="140" y="120" width="1" height="16" origin="3"/>
+		</line>
+		<line>
+			<reportElement x="520" y="120" width="1" height="16" origin="3"/>
+		</line>
+		<line>
+			<reportElement x="471" y="120" width="1" height="16" origin="3"/>
+		</line>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="198" y="120" width="41" height="16" origin="3"/>
+			<textContent><![CDATA[1000015]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="237" y="120" width="26" height="16" origin="3"/>
+			<textContent><![CDATA[400]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="264" y="120" width="32" height="16" origin="3"/>
+			<textContent><![CDATA[400.0]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="327" y="120" width="47" height="16" origin="3"/>
+			<textContent><![CDATA[120.0]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="374" y="120" width="48" height="16" origin="3"/>
+			<textContent><![CDATA[0.0]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="422" y="120" width="49" height="16" origin="3"/>
+			<textContent><![CDATA[0.0]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="472" y="120" width="48" height="16" origin="3"/>
+			<textContent><![CDATA[快快快]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="521" y="120" width="52" height="16" origin="3"/>
+			<textContent><![CDATA[2012-02-14]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="82" y="120" width="59" height="16" origin="3"/>
+			<textContent><![CDATA[201202073]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="141" y="120" width="55" height="16" origin="3"/>
+			<textContent><![CDATA[121545121]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="21" y="120" width="61" height="16" origin="3"/>
+			<font isUnderline="false"/>
+			<textContent><![CDATA[上海嘉星X]]></textContent>
+		</text>
+		<line>
+			<reportElement x="326" y="97" width="1" height="23" origin="3"/>
+		</line>
+		<line>
+			<reportElement x="326" y="120" width="1" height="16" origin="3"/>
+		</line>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="297" y="120" width="29" height="16" origin="3"/>
+			<textContent><![CDATA[10.0]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="20" y="170" width="553" height="20" origin="4"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[注;对账无误后请汇入如下账号，如有异议，请及时联系对账员。]]></textContent>
+		</text>
+		<text textHeight="13.657227">
+			<reportElement x="20" y="190" width="45" height="20" origin="4"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[户名：]]></textContent>
+		</text>
+		<text textHeight="13.657227">
+			<reportElement x="20" y="210" width="45" height="20" origin="4"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[账号：]]></textContent>
+		</text>
+		<text textHeight="13.657227">
+			<reportElement x="20" y="229" width="45" height="20" origin="4"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[开户行：]]></textContent>
+		</text>
+		<text textHeight="13.657227">
+			<reportElement x="297" y="190" width="45" height="20" origin="4"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[户名：]]></textContent>
+		</text>
+		<text textHeight="13.657227">
+			<reportElement x="297" y="210" width="45" height="20" origin="4"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[账号：]]></textContent>
+		</text>
+		<text textHeight="13.657227">
+			<reportElement x="297" y="229" width="45" height="20" origin="4"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[开户行：]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="20" y="264" width="100" height="20" origin="4"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[对账员：]]></textContent>
+		</text>
+		<text textHeight="13.657227">
+			<reportElement x="20" y="284" width="100" height="20" origin="4"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[联系电话：]]></textContent>
+		</text>
+		<line>
+			<reportElement x="20" y="160" width="555" height="1" origin="4"/>
+		</line>
+		<line>
+			<reportElement x="81" y="137" width="1" height="23" origin="4"/>
+		</line>
+		<line>
+			<reportElement x="140" y="137" width="1" height="23" origin="4"/>
+		</line>
+		<line>
+			<reportElement x="237" y="137" width="1" height="23" origin="4"/>
+		</line>
+		<line>
+			<reportElement x="471" y="137" width="1" height="23" origin="4"/>
+		</line>
+		<line>
+			<reportElement x="374" y="137" width="1" height="23" origin="4"/>
+		</line>
+		<line>
+			<reportElement x="520" y="137" width="1" height="23" origin="4"/>
+		</line>
+		<line>
+			<reportElement x="263" y="137" width="1" height="23" origin="4"/>
+		</line>
+		<line>
+			<reportElement x="20" y="137" width="1" height="23" origin="4"/>
+		</line>
+		<line>
+			<reportElement x="194" y="137" width="1" height="23" origin="4"/>
+		</line>
+		<line>
+			<reportElement x="574" y="137" width="1" height="23" origin="4"/>
+		</line>
+		<line>
+			<reportElement x="422" y="137" width="1" height="23" origin="4"/>
+		</line>
+		<line>
+			<reportElement x="296" y="137" width="1" height="23" origin="4"/>
+		</line>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="15.022949">
+			<reportElement x="20" y="137" width="62" height="23" origin="4"/>
+			<font size="11" isBold="true"/>
+			<textContent><![CDATA[合计]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="15.022949">
+			<reportElement x="472" y="137" width="48" height="23" origin="4"/>
+			<font size="11" isBold="true"/>
+			<textContent><![CDATA[合计金额]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="13.657227">
+			<reportElement x="53" y="189" width="244" height="20" origin="4"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[新邦物流]]></textContent>
+		</text>
+		<text textHeight="15.022949">
+			<reportElement x="53" y="209" width="244" height="20" origin="4"/>
+			<font size="11" isBold="true"/>
+			<textContent><![CDATA[123123456546789153]]></textContent>
+		</text>
+		<text textHeight="15.022949">
+			<reportElement x="65" y="228" width="232" height="19" origin="4"/>
+			<font size="11" isBold="true"/>
+			<textContent><![CDATA[中国建设银行]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="15.022949">
+			<reportElement x="330" y="189" width="244" height="20" origin="4"/>
+			<font size="11" isBold="true"/>
+			<textContent><![CDATA[张三]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="15.022949">
+			<reportElement x="330" y="208" width="244" height="20" origin="4"/>
+			<font size="11" isBold="true"/>
+			<textContent><![CDATA[88989562312122145]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="15.022949">
+			<reportElement x="343" y="228" width="230" height="18" origin="4"/>
+			<font size="11" isBold="true"/>
+			<textContent><![CDATA[中国东莞银行]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="15.022949">
+			<reportElement x="65" y="264" width="232" height="20" origin="4"/>
+			<font size="11" isBold="true"/>
+			<textContent><![CDATA[null]]></textContent>
+		</text>
+		<text textHeight="15.022949">
+			<reportElement x="76" y="284" width="221" height="20" origin="4"/>
+			<font size="11" isBold="true"/>
+			<textContent><![CDATA[13955326654]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227" valueClass="java.lang.Integer">
+			<reportElement x="238" y="137" width="25" height="23" origin="4"/>
+			<textContent><![CDATA[400]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227" valueClass="java.lang.Double">
+			<reportElement x="264" y="137" width="32" height="23" origin="4"/>
+			<textContent><![CDATA[400.0]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227" valueClass="java.lang.Double">
+			<reportElement x="328" y="137" width="46" height="24" origin="4"/>
+			<textContent><![CDATA[120.0]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227" valueClass="java.lang.Double">
+			<reportElement x="375" y="137" width="47" height="23" origin="4"/>
+			<textContent><![CDATA[0.0]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227" valueClass="java.lang.Double">
+			<reportElement x="422" y="137" width="49" height="23" origin="4"/>
+			<textContent><![CDATA[0.0]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227" valueClass="java.lang.Double">
+			<reportElement x="521" y="138" width="52" height="22" origin="4"/>
+			<textContent><![CDATA[-120.0]]></textContent>
+		</text>
+		<text verticalAlignment="Bottom" textHeight="13.657227">
+			<reportElement x="20" y="248" width="100" height="20" origin="4"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[新邦对账单号：]]></textContent>
+		</text>
+		<text verticalAlignment="Bottom" textHeight="15.022949">
+			<reportElement x="96" y="247" width="232" height="22" origin="4"/>
+			<font size="11" isBold="true"/>
+			<textContent><![CDATA[1167]]></textContent>
+		</text>
+		<line>
+			<reportElement x="326" y="137" width="1" height="24" origin="4"/>
+		</line>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="13.657227" valueClass="java.lang.Double">
+			<reportElement x="297" y="137" width="29" height="23" origin="4"/>
+			<textContent><![CDATA[10.0]]></textContent>
+		</text>
+	</page>
+</jasperPrint>

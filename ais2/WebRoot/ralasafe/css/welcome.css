@@ -1,0 +1,78 @@
+
+body{ font-size:12px;background:#FFFFFF;}
+a:link {
+}
+
+a:hover {
+}
+a:active {
+}
+a.lnk1{ font-size:13px; color:#333333}
+a.lnk1:visited {color:#333333;text-decoration: none;}
+a.lnk1:hover{ text-decoration:underline; color:#FF6600;}
+
+a.lnk2{ font-size:12px; color:#FF6600}
+a.lnk2:visited {color:#FF6600;text-decoration: #CC0000;}
+a.lnk2:hover{ text-decoration:underline; color:#000000;}
+
+a.lnk3{ font-size:13px; color:#000000}
+a.lnk3:visited {color:#000000;text-decoration: none;}
+a.lnk3:hover{ text-decoration:underline; color:#FF0000}
+
+a.lnk4{ font-size:14px; color:#FF6600}
+a.lnk4:visited {color:#FF6600;text-decoration: #CC0000;}
+a.lnk4:hover{ text-decoration:underline; color:#000000;}
+
+.welcome {
+	margin:0px;
+	padding:0px;
+	font-size:16px;
+	color: #669933;
+}
+
+.red {
+	font-size: 18px;
+	color: #FF0000;
+	font-weight: bold;}
+.red1 {
+	font-size: 12px;
+	color: #FF0000;}
+.blue {
+	font-size: 16px;
+	color:#FF6600;
+	font-weight: bold;}
+.blue1 {
+	font-size: 18px;
+	color:#0066CC;
+	font-weight: bold;}
+.blue2 {
+	font-size: 20px;
+	color:#669933;
+	font-weight: bold;}
+
+.White {
+	font-size: 12px;
+	color: #FFFFFF;}
+.blank {
+	font-size: 13px;
+	color: #000000;
+	line-height: 25px;}
+.blank1 {
+	font-size: 13px;
+	color: #FF6600;
+	line-height: 16px;}
+
+.list1{
+	background-color: #C5D5F5;
+}
+.list2{
+	background-color: #EDEBEB;
+}
+.list3{ background:#F0F4FD;}
+.list4{ background:#FFFFFF;}
+.list5{ background:#D3D6FA;}
+.list6{ background:#EBECFC;}
+.list7{ background:#E2E8FC;}
+.list8{ background:#F7F7F7;}
+.list9{ background:#316AC5;}
+.list10{ background:#CCCCCC;}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+    
+    <!-- 192.168.8.202对应外网地址 113.108.161.67:81 -->
+    
+    <!-- 定时任务访问地址 -->
+ 	<bean id="schedulerWebService" class="org.springframework.remoting.caucho.HessianProxyFactoryBean">   
+    	<property name="serviceUrl" value="http://192.168.8.202:81/aisCenter/hessian/schedulerWebServiceImpl" />   
+    	<property name="serviceInterface" value="com.xbwl.ws.client.SchedulerWebService" />   
+    </bean>
+ 
+    <!-- 网营客户投诉建议远程写入数据接口 -->
+    <bean id="wsCusComplaintRemot" class="org.springframework.remoting.caucho.HessianProxyFactoryBean">   
+	   	<property name="serviceUrl" value="http://192.168.8.202:81/psonline/hessian/springCusComplaintRemot" />   
+	   	<property name="serviceInterface" value="com.xbwl.ws.client.IWSCusComplaintService" />   
+    </bean>
+    
+    <!-- EDI对AIS2.0外部接口 -->
+    <bean id="wsEdiToAisRemote" class="org.springframework.remoting.caucho.HessianProxyFactoryBean">   
+	   	<property name="serviceUrl" value="http://192.168.8.202:81/edi/hessian/wsEdiToAisRemote" />   
+	   	<property name="serviceInterface" value="com.xbwl.ws.client.IWSEdiToAisRemote" />   
+    </bean>
+    
+     <!-- 短信发送远程接口 -->
+    <bean id="wSSmsSendsmsRemot" class="org.springframework.remoting.caucho.HessianProxyFactoryBean">   
+	   	<property name="serviceUrl" value="http://127.0.0.1:8080/message/hessian/springSmsSendsmsRemot" />   
+	   	<property name="serviceInterface" value="com.xbwl.ws.client.IWSSmsSendsmsService" />   
+    </bean>
+</beans>
+

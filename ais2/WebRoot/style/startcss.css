@@ -1,0 +1,77 @@
+.user_rate {
+	font-size: 14px;
+	position: relative;
+	padding: 10px 0;
+	width:100%;
+}
+
+.user_rate p {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	height: 40px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 100px;
+	margin-left: 140px;
+}
+
+.user_rate p span.s {
+	font-size: 36px;
+	line-height: 36px;
+	float: left;
+	font-weight: bold;
+	color: #DD5400;
+}
+
+.user_rate p span.g {
+	font-size: 22px;
+	display: block;
+	float: left;
+	color: #DD5400;
+}
+
+/*rating*/
+.big_rate_bak {
+	width: 140px;
+	height: 28px;
+	text-align: left;
+	position: absolute;
+	top: 3px;
+	left: 85px;
+	display: inline-block;
+	background:
+		url("../imags/star.gif") left
+		-32px repeat-x;
+}
+
+.big_rate_bak b {
+	display: inline-block;
+	width: 28px;
+	float: left;
+	height: 28px;
+	position: relative;
+	z-index: 1000;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.big_rate_up {
+	width: 140px;
+	height: 28px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background:
+		url("../imags/star.gif") left
+		top;
+}
+
+#phoneTips {
+	position: absolute;
+	width: 200px;
+	height: 115px;
+	z-index: 1;
+	top: 55px;
+}

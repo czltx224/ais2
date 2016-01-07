@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="tm_overmemoPrintReport_xb.jrxml" language="groovy" pageWidth="683" pageHeight="395" columnWidth="663" leftMargin="10" rightMargin="10" topMargin="10" bottomMargin="10">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="xPath">
+		<![CDATA[/billLadings/printBeans/billLading]]>
+	</queryString>
+	<field name="startDepartName" class="java.lang.String">
+		<fieldDescription><![CDATA[startDepartName]]></fieldDescription>
+	</field>
+	<field name="overmemoId" class="java.lang.String">
+		<fieldDescription><![CDATA[overmemoId]]></fieldDescription>
+	</field>
+	<field name="dno" class="java.lang.String">
+		<fieldDescription><![CDATA[dno]]></fieldDescription>
+	</field>
+	<field name="consigneeInfo" class="java.lang.String">
+		<fieldDescription><![CDATA[consigneeInfo]]></fieldDescription>
+	</field>
+	<field name="toWhere" class="java.lang.String">
+		<fieldDescription><![CDATA[toWhere]]></fieldDescription>
+	</field>
+	<field name="autostowMode" class="java.lang.String">
+		<fieldDescription><![CDATA[autostowMode]]></fieldDescription>
+	</field>
+	<field name="piece" class="java.lang.String">
+		<fieldDescription><![CDATA[piece]]></fieldDescription>
+	</field>
+	<field name="weight" class="java.lang.String">
+		<fieldDescription><![CDATA[weight]]></fieldDescription>
+	</field>
+	<field name="cqName" class="java.lang.String">
+		<fieldDescription><![CDATA[cqName]]></fieldDescription>
+	</field>
+	<field name="flightMainNo" class="java.lang.String">
+		<fieldDescription><![CDATA[flightMainNo]]></fieldDescription>
+	</field>
+	<field name="subNo" class="java.lang.String">
+		<fieldDescription><![CDATA[subNo]]></fieldDescription>
+	</field>
+	<field name="realPiece" class="java.lang.String">
+		<fieldDescription><![CDATA[realPiece]]></fieldDescription>
+	</field>
+	<field name="signNun" class="java.lang.String">
+		<fieldDescription><![CDATA[signNun]]></fieldDescription>
+	</field>
+	<field name="consigneeFee" class="java.lang.String">
+		<fieldDescription><![CDATA[consigneeFee]]></fieldDescription>
+	</field>
+	<field name="paymentCollection" class="java.lang.String">
+		<fieldDescription><![CDATA[paymentCollection]]></fieldDescription>
+	</field>
+	<field name="traFee" class="java.lang.String">
+		<fieldDescription><![CDATA[traFee]]></fieldDescription>
+	</field>
+	<field name="request" class="java.lang.String">
+		<fieldDescription><![CDATA[request]]></fieldDescription>
+	</field>
+	<field name="sendName" class="java.lang.String">
+		<fieldDescription><![CDATA[sendName]]></fieldDescription>
+	</field>
+	<field name="autostowName" class="java.lang.String">
+		<fieldDescription><![CDATA[autostowName]]></fieldDescription>
+	</field>
+	<field name="sendNameTel" class="java.lang.String">
+		<fieldDescription><![CDATA[sendNameTel]]></fieldDescription>
+	</field>
+	<field name="totalTicket" class="java.lang.String">
+		<fieldDescription><![CDATA[totalTicket]]></fieldDescription>
+	</field>
+	<field name="totalPiece" class="java.lang.String">
+		<fieldDescription><![CDATA[totalPiece]]></fieldDescription>
+	</field>
+	<field name="totalWeight" class="java.lang.String">
+		<fieldDescription><![CDATA[totalWeight]]></fieldDescription>
+	</field>
+	<field name="loadingGroup" class="java.lang.String">
+		<fieldDescription><![CDATA[loadingGroup]]></fieldDescription>
+	</field>
+	<field name="driverName" class="java.lang.String">
+		<fieldDescription><![CDATA[driverName]]></fieldDescription>
+	</field>
+	<field name="dispatchGroup" class="java.lang.String">
+		<fieldDescription><![CDATA[dispatchGroup]]></fieldDescription>
+	</field>
+	<field name="routeNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[routeNumber]]></fieldDescription>
+	</field>
+	<field name="cargoName" class="java.lang.String">
+		<fieldDescription><![CDATA[cargoName]]></fieldDescription>
+	</field>
+	<field name="printName" class="java.lang.String">
+		<fieldDescription><![CDATA[printName]]></fieldDescription>
+	</field>
+	<field name="printNum" class="java.lang.String">
+		<fieldDescription><![CDATA[printNum]]></fieldDescription>
+	</field>
+	<field name="printTime" class="java.lang.String">
+		<fieldDescription><![CDATA[printTime]]></fieldDescription>
+	</field>
+	<field name="printId" class="java.lang.String">
+		<fieldDescription><![CDATA[printId]]></fieldDescription>
+	</field>
+	<field name="sourceNo" class="java.lang.String">
+		<fieldDescription><![CDATA[sourceNo]]></fieldDescription>
+	</field>
+	<field name="imgBaseUrl" class="java.lang.String">
+		<fieldDescription><![CDATA[/billLadings/imgBaseUrl]]></fieldDescription>
+	</field>
+	<field name="cpFee" class="java.lang.String">
+		<fieldDescription><![CDATA[cpFee]]></fieldDescription>
+	</field>
+	<field name="shouru" class="java.lang.String">
+		<fieldDescription><![CDATA[shouru]]></fieldDescription>
+	</field>
+	<variable name="SUM_PIECE" class="java.lang.Integer" calculation="Sum">
+		<variableExpression><![CDATA[new java.lang.Integer($F{piece})]]></variableExpression>
+	</variable>
+	<variable name="SUM_WEIGHT" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[new java.lang.Double($F{weight})]]></variableExpression>
+	</variable>
+	<variable name="SUM_FEE" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[Double.valueOf($F{consigneeFee})+Double.valueOf($F{paymentCollection})]]></variableExpression>
+	</variable>
+	<variable name="SUM_TRAFEE" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[Double.valueOf($F{traFee})]]></variableExpression>
+	</variable>
+	<variable name="SUM_CONSIGNEEFEE" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[Double.valueOf($F{consigneeFee})]]></variableExpression>
+	</variable>
+	<variable name="SUM_PAYMENTCOLLECTION" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[Double.valueOf($F{paymentCollection})]]></variableExpression>
+	</variable>
+	<variable name="SUM_SHOURU" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[Double.valueOf($F{shouru})]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement key="staticText-40" x="19" y="34" width="55" height="17"/>
+				<textElement>
+					<font size="11" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[实配单号:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="194" y="35" width="88" height="17"/>
+				<textElement>
+					<font size="11" isBold="true" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{startDepartName}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="75" y="34" width="63" height="17"/>
+				<textElement>
+					<font size="11" isBold="true" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{overmemoId}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement key="staticText-41" x="284" y="36" width="55" height="17"/>
+				<textElement>
+					<font size="11" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[实配去向:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-42" x="138" y="35" width="60" height="17"/>
+				<textElement>
+					<font size="11" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[出发部门：]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="159" y="0" width="345" height="28"/>
+				<textElement textAlignment="Center">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{autostowMode}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="339" y="36" width="121" height="17"/>
+				<textElement>
+					<font size="11" isBold="true" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{toWhere}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="470" y="3" width="122" height="15"/>
+				<textElement/>
+				<text><![CDATA[注：加粗栏位为手工填写项]]></text>
+			</staticText>
+			<image>
+				<reportElement x="13" y="1" width="100" height="33"/>
+				<imageExpression><![CDATA[$F{imgBaseUrl}]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="37" splitType="Stretch">
+			<line>
+				<reportElement key="line-37" x="116" y="2" width="1" height="35"/>
+			</line>
+			<staticText>
+				<reportElement x="440" y="12" width="20" height="20"/>
+				<textElement/>
+				<text><![CDATA[到付]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="130" y="12" width="32" height="20"/>
+				<textElement/>
+				<text><![CDATA[主单号]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="384" y="5" width="21" height="30"/>
+				<textElement/>
+				<text><![CDATA[实配件数]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="12" width="44" height="20"/>
+				<textElement/>
+				<text><![CDATA[发货代理]]></text>
+			</staticText>
+			<line>
+				<reportElement key="line-24" x="171" y="1" width="1" height="35"/>
+			</line>
+			<staticText>
+				<reportElement x="494" y="5" width="20" height="30"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[应付成本]]></text>
+			</staticText>
+			<line>
+				<reportElement key="line-15" x="436" y="2" width="1" height="35"/>
+			</line>
+			<staticText>
+				<reportElement x="328" y="12" width="24" height="20"/>
+				<textElement/>
+				<text><![CDATA[重量]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="357" y="5" width="20" height="30"/>
+				<textElement/>
+				<text><![CDATA[开单件数]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="244" y="12" width="52" height="20"/>
+				<textElement/>
+				<text><![CDATA[收货人信息]]></text>
+			</staticText>
+			<line>
+				<reportElement key="line-17" x="381" y="1" width="1" height="35"/>
+			</line>
+			<line>
+				<reportElement key="line-24" x="2" y="2" width="1" height="35"/>
+			</line>
+			<staticText>
+				<reportElement x="174" y="12" width="33" height="20"/>
+				<textElement/>
+				<text><![CDATA[分单号]]></text>
+			</staticText>
+			<line>
+				<reportElement key="line-13" x="490" y="2" width="1" height="35"/>
+			</line>
+			<line>
+				<reportElement key="line-14" x="463" y="1" width="1" height="35"/>
+			</line>
+			<line>
+				<reportElement key="line-18" x="353" y="2" width="1" height="35"/>
+			</line>
+			<staticText>
+				<reportElement x="6" y="12" width="40" height="20"/>
+				<textElement/>
+				<text><![CDATA[配送单号]]></text>
+			</staticText>
+			<line>
+				<reportElement key="line-16" x="408" y="2" width="1" height="35"/>
+			</line>
+			<staticText>
+				<reportElement x="412" y="5" width="21" height="30"/>
+				<textElement/>
+				<text><![CDATA[原件份数]]></text>
+			</staticText>
+			<line>
+				<reportElement key="line-37" x="208" y="2" width="1" height="35"/>
+			</line>
+			<line>
+				<reportElement key="line-35" x="605" y="1" width="1" height="35"/>
+			</line>
+			<line>
+				<reportElement key="line-24" x="48" y="2" width="1" height="35"/>
+			</line>
+			<staticText>
+				<reportElement x="466" y="5" width="20" height="30"/>
+				<textElement/>
+				<text><![CDATA[代收货款]]></text>
+			</staticText>
+			<line>
+				<reportElement key="line-22" positionType="Float" x="3" y="1" width="602" height="1"/>
+			</line>
+			<line>
+				<reportElement key="line-18" x="324" y="2" width="1" height="35"/>
+			</line>
+			<line>
+				<reportElement key="line-21" positionType="Float" x="3" y="36" width="602" height="1"/>
+			</line>
+			<line>
+				<reportElement key="line-13" x="519" y="1" width="1" height="35"/>
+			</line>
+			<staticText>
+				<reportElement x="556" y="12" width="40" height="15"/>
+				<textElement>
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[客户要求]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="523" y="12" width="20" height="20"/>
+				<textElement/>
+				<text><![CDATA[收入]]></text>
+			</staticText>
+			<line>
+				<reportElement key="line-13" x="545" y="2" width="1" height="35"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="19" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement x="210" y="1" width="114" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{consigneeInfo}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement key="line-11" positionType="Float" x="3" y="18" width="602" height="1"/>
+			</line>
+			<line>
+				<reportElement key="line-30" stretchType="RelativeToTallestObject" x="353" y="0" width="1" height="18"/>
+			</line>
+			<line>
+				<reportElement key="line-34" stretchType="RelativeToTallestObject" x="463" y="0" width="1" height="18"/>
+			</line>
+			<line>
+				<reportElement key="line-38" stretchType="RelativeToTallestObject" x="208" y="0" width="1" height="18"/>
+			</line>
+			<line>
+				<reportElement key="line-27" stretchType="RelativeToTallestObject" x="408" y="0" width="1" height="18"/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="51" y="2" width="63" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{cqName}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="326" y="1" width="25" height="15"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{weight}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement key="line-32" stretchType="RelativeToTallestObject" x="48" y="0" width="1" height="18"/>
+			</line>
+			<line>
+				<reportElement key="line-32" stretchType="RelativeToTallestObject" x="171" y="1" width="1" height="16"/>
+			</line>
+			<line>
+				<reportElement key="line-32" stretchType="RelativeToTallestObject" x="116" y="0" width="1" height="18"/>
+			</line>
+			<line>
+				<reportElement key="line-36" stretchType="RelativeToBandHeight" x="490" y="0" width="1" height="18"/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="437" y="1" width="25" height="15"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{consigneeFee}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement key="line-26" stretchType="RelativeToTallestObject" x="436" y="0" width="1" height="18"/>
+			</line>
+			<line>
+				<reportElement key="line-36" stretchType="RelativeToBandHeight" x="605" y="0" width="1" height="18"/>
+			</line>
+			<line>
+				<reportElement key="line-29" stretchType="RelativeToTallestObject" x="324" y="0" width="1" height="18"/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="382" y="2" width="25" height="15"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{piece}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="118" y="1" width="52" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{flightMainNo}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement key="line-25" stretchType="RelativeToTallestObject" x="2" y="0" width="1" height="18"/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="355" y="2" width="25" height="15"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{piece}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="173" y="1" width="35" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{subNo}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="465" y="1" width="25" height="15"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{paymentCollection}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement key="line-28" stretchType="RelativeToTallestObject" x="381" y="0" width="1" height="18"/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="6" y="2" width="42" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{dno}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="410" y="2" width="25" height="15"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{signNun}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="493" y="1" width="25" height="15"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{traFee}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement key="line-36" stretchType="RelativeToBandHeight" x="519" y="0" width="1" height="18"/>
+			</line>
+			<line>
+				<reportElement key="line-36" stretchType="RelativeToBandHeight" x="545" y="0" width="1" height="18"/>
+			</line>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="521" y="1" width="25" height="15"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{shouru}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="547" y="1" width="58" height="15"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{request}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="14" splitType="Stretch">
+			<textField isBlankWhenNull="false">
+				<reportElement key="textField" x="555" y="1" width="14" height="12"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement key="staticText-39" x="569" y="1" width="11" height="12"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[页]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-38" x="542" y="1" width="11" height="12"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[第]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-38" x="506" y="1" width="11" height="12"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[共]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-39" x="531" y="1" width="11" height="12"/>
+				<textElement>
+					<font size="8" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[页]]></text>
+			</staticText>
+			<textField evaluationTime="Report">
+				<reportElement x="520" y="1" width="11" height="12"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="135" splitType="Stretch">
+			<staticText>
+				<reportElement key="staticText-31" x="450" y="103" width="45" height="15"/>
+				<textElement>
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[打印时间:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="7" y="1" width="46" height="15"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[件数合计:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="500" y="101" width="80" height="17"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{printTime}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="285" y="1" width="50" height="15"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[应收合计:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="392" y="83" width="39" height="15"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[送货员:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="203" y="1" width="50" height="15"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[票数合计:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-30" x="293" y="102" width="40" height="15"/>
+				<textElement>
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[打 印 人:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="337" y="102" width="41" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{printName}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="251" y="1" width="33" height="15"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{totalTicket}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="101" y="1" width="50" height="15"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[重量合计:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="492" y="84" width="35" height="15"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[司机:]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="53" y="1" width="48" height="15"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{totalPiece}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="147" y="1" width="59" height="15"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{totalWeight}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="333" y="1" width="50" height="15"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{SUM_FEE}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="431" y="97" width="50" height="1"/>
+			</line>
+			<line>
+				<reportElement x="526" y="98" width="50" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="298" y="81" width="47" height="15"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[配载员:]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="338" y="81" width="56" height="15"/>
+				<textElement>
+					<font size="10" isBold="false" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cargoName}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="428" y="102" width="21" height="15"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{printNum}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="381" y="102" width="45" height="15"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[打印次数:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="383" y="1" width="10" height="15"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[元]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="435" y="1" width="49" height="15"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[应付合计:]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="485" y="1" width="50" height="15"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$V{SUM_TRAFEE}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="535" y="1" width="10" height="15"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[元]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="65" y="26" width="50" height="15"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{SUM_CONSIGNEEFEE}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="7" y="26" width="58" height="15"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[到付合计:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="132" y="26" width="68" height="15"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[代收货款合计:]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="201" y="26" width="50" height="15"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{SUM_PAYMENTCOLLECTION}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="114" y="26" width="10" height="15"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[元]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="251" y="26" width="10" height="15"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[元]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="337" y="26" width="50" height="15"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{SUM_SHOURU}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="279" y="26" width="58" height="15"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[收入合计:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="386" y="26" width="10" height="15"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[元]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

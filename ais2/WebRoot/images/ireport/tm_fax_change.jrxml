@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="tm_fax_change" language="groovy" pageWidth="683" pageHeight="395" columnWidth="663" leftMargin="10" rightMargin="10" topMargin="10" bottomMargin="10">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="xPath">
+		<![CDATA[/billLadings/printBeans/billLading]]>
+	</queryString>
+	<field name="changeTitle" class="java.lang.String">
+		<fieldDescription><![CDATA[changeTitle]]></fieldDescription>
+	</field>
+	<field name="changeDepart" class="java.lang.String">
+		<fieldDescription><![CDATA[changeDepart]]></fieldDescription>
+	</field>
+	<field name="changeName" class="java.lang.String">
+		<fieldDescription><![CDATA[changeName]]></fieldDescription>
+	</field>
+	<field name="changeDate" class="java.lang.String">
+		<fieldDescription><![CDATA[changeDate]]></fieldDescription>
+	</field>
+	<field name="changeNo" class="java.lang.String">
+		<fieldDescription><![CDATA[changeNo]]></fieldDescription>
+	</field>
+	<field name="cusName" class="java.lang.String">
+		<fieldDescription><![CDATA[cusName]]></fieldDescription>
+	</field>
+	<field name="dno" class="java.lang.String">
+		<fieldDescription><![CDATA[dno]]></fieldDescription>
+	</field>
+	<field name="subNo" class="java.lang.String">
+		<fieldDescription><![CDATA[subNo]]></fieldDescription>
+	</field>
+	<field name="flightMainNo" class="java.lang.String">
+		<fieldDescription><![CDATA[flightMainNo]]></fieldDescription>
+	</field>
+	<field name="consignee" class="java.lang.String">
+		<fieldDescription><![CDATA[consignee]]></fieldDescription>
+	</field>
+	<field name="piece" class="java.lang.String">
+		<fieldDescription><![CDATA[piece]]></fieldDescription>
+	</field>
+	<field name="weight" class="java.lang.String">
+		<fieldDescription><![CDATA[weight]]></fieldDescription>
+	</field>
+	<field name="weightFee" class="java.lang.String">
+		<fieldDescription><![CDATA[weightFee]]></fieldDescription>
+	</field>
+	<field name="payWay" class="java.lang.String">
+		<fieldDescription><![CDATA[payWay]]></fieldDescription>
+	</field>
+	<field name="goWhere" class="java.lang.String">
+		<fieldDescription><![CDATA[goWhere]]></fieldDescription>
+	</field>
+	<field name="distributionMode" class="java.lang.String">
+		<fieldDescription><![CDATA[distributionMode]]></fieldDescription>
+	</field>
+	<field name="takeMode" class="java.lang.String">
+		<fieldDescription><![CDATA[takeMode]]></fieldDescription>
+	</field>
+	<field name="changeContent" class="java.lang.String">
+		<fieldDescription><![CDATA[changeContent]]></fieldDescription>
+	</field>
+	<field name="printName" class="java.lang.String">
+		<fieldDescription><![CDATA[printName]]></fieldDescription>
+	</field>
+	<field name="printNum" class="java.lang.String">
+		<fieldDescription><![CDATA[printNum]]></fieldDescription>
+	</field>
+	<field name="printTime" class="java.lang.String">
+		<fieldDescription><![CDATA[printTime]]></fieldDescription>
+	</field>
+	<field name="printId" class="java.lang.String">
+		<fieldDescription><![CDATA[printId]]></fieldDescription>
+	</field>
+	<field name="sourceNo" class="java.lang.String">
+		<fieldDescription><![CDATA[sourceNo]]></fieldDescription>
+	</field>
+	<field name="imgBaseUrl" class="java.lang.String">
+		<fieldDescription><![CDATA[/billLadings/imgBaseUrl]]></fieldDescription>
+	</field>
+	<field name="xbwlImagePath" class="java.lang.String">
+		<fieldDescription><![CDATA[xbwlImagePath]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="169" splitType="Stretch">
+			<staticText>
+				<reportElement x="3" y="83" width="50" height="15"/>
+				<textElement/>
+				<text><![CDATA[填写部门：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="145" y="83" width="50" height="15"/>
+				<textElement/>
+				<text><![CDATA[填写人：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="492" y="83" width="34" height="15"/>
+				<textElement/>
+				<text><![CDATA[日期：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="492" y="58" width="34" height="15"/>
+				<textElement/>
+				<text><![CDATA[NO：]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="526" y="58" width="100" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{changeNo}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="526" y="83" width="100" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{changeDate}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="200" y="83" width="100" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{changeName}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="45" y="83" width="100" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{changeDepart}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="185" y="45" width="293" height="28"/>
+				<textElement textAlignment="Center">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{changeTitle}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="0" y="1" width="663" height="72"/>
+				<imageExpression><![CDATA[$F{xbwlImagePath}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="3" y="108" width="50" height="15"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[代理名称]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="128" width="50" height="15"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[件数]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="168" width="663" height="1"/>
+			</line>
+			<line>
+				<reportElement x="0" y="126" width="663" height="1"/>
+			</line>
+			<line>
+				<reportElement x="-1" y="106" width="1" height="62"/>
+			</line>
+			<line>
+				<reportElement x="53" y="106" width="1" height="39"/>
+			</line>
+			<staticText>
+				<reportElement x="134" y="108" width="40" height="15"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[配送单号]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="95" y="128" width="30" height="15"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[重量]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="237" y="108" width="30" height="15"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[主单号]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="361" y="108" width="30" height="15"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[分单号]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="456" y="109" width="50" height="15"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[收货人姓名]]></text>
+			</staticText>
+			<line>
+				<reportElement x="132" y="106" width="1" height="20"/>
+			</line>
+			<line>
+				<reportElement x="176" y="106" width="1" height="20"/>
+			</line>
+			<line>
+				<reportElement x="233" y="106" width="1" height="20"/>
+			</line>
+			<line>
+				<reportElement x="270" y="106" width="1" height="20"/>
+			</line>
+			<line>
+				<reportElement x="359" y="106" width="1" height="20"/>
+			</line>
+			<line>
+				<reportElement x="392" y="106" width="1" height="20"/>
+			</line>
+			<line>
+				<reportElement x="452" y="106" width="1" height="20"/>
+			</line>
+			<line>
+				<reportElement x="510" y="106" width="1" height="20"/>
+			</line>
+			<line>
+				<reportElement x="91" y="127" width="1" height="18"/>
+			</line>
+			<line>
+				<reportElement x="128" y="127" width="1" height="18"/>
+			</line>
+			<staticText>
+				<reportElement x="180" y="128" width="40" height="15"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[计费重量]]></text>
+			</staticText>
+			<line>
+				<reportElement x="177" y="127" width="1" height="18"/>
+			</line>
+			<line>
+				<reportElement x="223" y="127" width="1" height="18"/>
+			</line>
+			<staticText>
+				<reportElement x="272" y="128" width="40" height="15"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[付款方式]]></text>
+			</staticText>
+			<line>
+				<reportElement x="270" y="127" width="1" height="18"/>
+			</line>
+			<line>
+				<reportElement x="313" y="127" width="1" height="18"/>
+			</line>
+			<staticText>
+				<reportElement x="361" y="128" width="30" height="15"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[去向]]></text>
+			</staticText>
+			<line>
+				<reportElement x="358" y="127" width="1" height="18"/>
+			</line>
+			<line>
+				<reportElement x="393" y="127" width="1" height="18"/>
+			</line>
+			<staticText>
+				<reportElement x="466" y="128" width="40" height="15"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[配送方式]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="557" y="128" width="40" height="15"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[提货方式]]></text>
+			</staticText>
+			<line>
+				<reportElement x="459" y="127" width="1" height="18"/>
+			</line>
+			<line>
+				<reportElement x="553" y="127" width="1" height="18"/>
+			</line>
+			<line>
+				<reportElement x="511" y="127" width="1" height="18"/>
+			</line>
+			<line>
+				<reportElement x="597" y="127" width="1" height="18"/>
+			</line>
+			<staticText>
+				<reportElement x="6" y="151" width="100" height="15"/>
+				<textElement/>
+				<text><![CDATA[更改内容：]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="56" y="108" width="76" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{cusName}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="180" y="108" width="50" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{dno}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="273" y="108" width="85" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{flightMainNo}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="395" y="108" width="57" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{subNo}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="514" y="108" width="140" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{consignee}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="56" y="128" width="35" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{piece}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="132" y="128" width="43" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{weight}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="227" y="128" width="43" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{weightFee}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="316" y="128" width="43" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{payWay}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="395" y="128" width="64" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{goWhere}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="512" y="128" width="41" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{distributionMode}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="600" y="128" width="60" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{takeMode}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="105" width="663" height="1"/>
+			</line>
+			<line>
+				<reportElement x="663" y="106" width="1" height="62"/>
+			</line>
+			<line>
+				<reportElement x="0" y="145" width="663" height="1"/>
+			</line>
+		</band>
+	</title>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="25" splitType="Stretch">
+			<line>
+				<reportElement x="-1" y="0" width="1" height="25"/>
+			</line>
+			<line>
+				<reportElement x="663" y="0" width="1" height="25"/>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement x="29" y="6" width="579" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{changeContent}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="47" splitType="Stretch">
+			<staticText>
+				<reportElement x="13" y="2" width="70" height="15"/>
+				<textElement/>
+				<text><![CDATA[财务处理意见：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="27" width="50" height="15"/>
+				<textElement/>
+				<text><![CDATA[总监签字：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="158" y="27" width="50" height="15"/>
+				<textElement/>
+				<text><![CDATA[经理签字：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="315" y="27" width="50" height="15"/>
+				<textElement/>
+				<text><![CDATA[主管签字：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="487" y="27" width="60" height="15"/>
+				<textElement/>
+				<text><![CDATA[经办人签字：]]></text>
+			</staticText>
+			<line>
+				<reportElement x="66" y="39" width="60" height="1"/>
+			</line>
+			<line>
+				<reportElement x="214" y="39" width="60" height="1"/>
+			</line>
+			<line>
+				<reportElement x="373" y="39" width="60" height="1"/>
+			</line>
+			<line>
+				<reportElement x="552" y="39" width="60" height="1"/>
+			</line>
+			<line>
+				<reportElement x="-1" y="0" width="1" height="47"/>
+			</line>
+			<line>
+				<reportElement x="0" y="21" width="663" height="1"/>
+			</line>
+			<line>
+				<reportElement x="0" y="46" width="663" height="1"/>
+			</line>
+			<line>
+				<reportElement x="663" y="0" width="1" height="47"/>
+			</line>
+			<line>
+				<reportElement x="0" y="0" width="663" height="1"/>
+			</line>
+		</band>
+	</summary>
+</jasperReport>

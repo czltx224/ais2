@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report_sj" language="groovy" pageWidth="683" pageHeight="263" columnWidth="669" leftMargin="7" rightMargin="7" topMargin="7" bottomMargin="7">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="xPath">
+		<![CDATA[/billLadings/printBeans/billLadings]]>
+	</queryString>
+	<field name="creataRemark" class="java.lang.String">
+		<fieldDescription><![CDATA[creataRemark]]></fieldDescription>
+	</field>
+	<field name="creataRemark2" class="java.lang.String">
+		<fieldDescription><![CDATA[creataRemark2]]></fieldDescription>
+	</field>
+	<field name="creataRemark3" class="java.lang.String">
+		<fieldDescription><![CDATA[creataRemark3]]></fieldDescription>
+	</field>
+	<field name="doName" class="java.lang.String">
+		<fieldDescription><![CDATA[doName]]></fieldDescription>
+	</field>
+	<field name="amount" class="java.lang.String">
+		<fieldDescription><![CDATA[amount]]></fieldDescription>
+	</field>
+	<field name="printReceiptAccountNo" class="java.lang.String">
+		<fieldDescription><![CDATA[printReceiptAccountNo]]></fieldDescription>
+	</field>
+	<field name="maxAmount" class="java.lang.String">
+		<fieldDescription><![CDATA[maxAmount]]></fieldDescription>
+	</field>
+	<field name="receiptData" class="java.lang.String">
+		<fieldDescription><![CDATA[receiptData]]></fieldDescription>
+	</field>
+	<field name="cashStatus" class="java.lang.String">
+		<fieldDescription><![CDATA[cashStatus]]></fieldDescription>
+	</field>
+	<field name="receiptId" class="java.lang.String">
+		<fieldDescription><![CDATA[receiptId]]></fieldDescription>
+	</field>
+	<field name="printNum" class="java.lang.String">
+		<fieldDescription><![CDATA[printNum]]></fieldDescription>
+	</field>
+	<field name="printId" class="java.lang.String">
+		<fieldDescription><![CDATA[printId]]></fieldDescription>
+	</field>
+	<title>
+		<band height="249" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Transparent" x="0" y="-2" width="669" height="35"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[收   据]]></text>
+			</staticText>
+			<image>
+				<reportElement x="38" y="-2" width="246" height="35"/>
+				<imageExpression class="java.lang.String"><![CDATA["\\\\192.168.8.51\\images\\ireport\\XB.jpg"]]></imageExpression>
+			</image>
+			<line>
+				<reportElement x="38" y="49" width="576" height="1"/>
+			</line>
+			<line>
+				<reportElement x="38" y="210" width="576" height="1"/>
+			</line>
+			<line>
+				<reportElement x="38" y="49" width="1" height="161"/>
+			</line>
+			<line>
+				<reportElement x="614" y="49" width="1" height="161"/>
+			</line>
+			<staticText>
+				<reportElement x="524" y="13" width="22" height="20"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NO.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="86" y="49" width="114" height="31"/>
+				<textElement verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[今收到]]></text>
+			</staticText>
+			<line>
+				<reportElement x="155" y="80" width="431" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="53" y="80" width="114" height="31"/>
+				<textElement verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<line>
+				<reportElement x="66" y="110" width="520" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="53" y="111" width="114" height="31"/>
+				<textElement verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<line>
+				<reportElement x="66" y="141" width="520" height="2"/>
+			</line>
+			<staticText>
+				<reportElement x="53" y="148" width="114" height="31"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[    金额（大写）]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="53" y="179" width="114" height="31"/>
+				<textElement verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<line>
+				<reportElement x="155" y="179" width="209" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="391" y="179" width="16" height="20"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[￥]]></text>
+			</staticText>
+			<line>
+				<reportElement x="420" y="199" width="126" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="473" y="208" width="141" height="29"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[经手人]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="38" y="206" width="144" height="30"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[核准]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="182" y="206" width="141" height="30"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[会计]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="323" y="207" width="141" height="30"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[出纳]]></text>
+			</staticText>
+			<line>
+				<reportElement x="74" y="235" width="101" height="1"/>
+			</line>
+			<line>
+				<reportElement x="211" y="235" width="101" height="1"/>
+			</line>
+			<line>
+				<reportElement x="363" y="236" width="101" height="1"/>
+			</line>
+			<line>
+				<reportElement x="524" y="236" width="90" height="1"/>
+			</line>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" mode="Transparent" x="622" y="13" width="11" height="20" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None">
+					<font size="10" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					<paragraph lineSpacing="Proportional" tabStopWidth="20"/>
+				</textElement>
+				<text><![CDATA[白]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="38" y="33" width="25" height="16"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[现金   ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="66" y="45" width="18" height="1"/>
+			</line>
+			<line>
+				<reportElement x="66" y="35" width="18" height="1"/>
+			</line>
+			<line>
+				<reportElement x="84" y="36" width="1" height="9"/>
+			</line>
+			<line>
+				<reportElement x="65" y="36" width="1" height="9"/>
+			</line>
+			<staticText>
+				<reportElement x="88" y="34" width="25" height="16"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[支票]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="138" y="34" width="25" height="16"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[汇款]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="188" y="33" width="25" height="16"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[其他]]></text>
+			</staticText>
+			<line>
+				<reportElement x="165" y="36" width="1" height="9"/>
+			</line>
+			<line>
+				<reportElement x="184" y="36" width="1" height="9"/>
+			</line>
+			<line>
+				<reportElement x="166" y="45" width="18" height="1"/>
+			</line>
+			<line>
+				<reportElement x="166" y="35" width="18" height="1"/>
+			</line>
+			<line>
+				<reportElement x="116" y="35" width="18" height="1"/>
+			</line>
+			<line>
+				<reportElement x="116" y="45" width="18" height="1"/>
+			</line>
+			<line>
+				<reportElement x="134" y="36" width="1" height="9"/>
+			</line>
+			<line>
+				<reportElement x="115" y="36" width="1" height="9"/>
+			</line>
+			<line>
+				<reportElement x="216" y="35" width="18" height="1"/>
+			</line>
+			<line>
+				<reportElement x="216" y="45" width="18" height="1"/>
+			</line>
+			<line>
+				<reportElement x="234" y="36" width="1" height="9"/>
+			</line>
+			<line>
+				<reportElement x="215" y="36" width="1" height="9"/>
+			</line>
+			<staticText>
+				<reportElement x="622" y="25" width="11" height="19"/>
+				<textElement/>
+				<text><![CDATA[联]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="622" y="35" width="11" height="19"/>
+				<textElement/>
+				<text><![CDATA[为]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="622" y="45" width="11" height="19"/>
+				<textElement/>
+				<text><![CDATA[存]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="622" y="54" width="11" height="22"/>
+				<textElement/>
+				<text><![CDATA[根]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="622" y="64" width="11" height="19"/>
+				<textElement/>
+				<text><![CDATA[联]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="622" y="123" width="11" height="19"/>
+				<textElement/>
+				<text><![CDATA[客]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="622" y="132" width="11" height="22"/>
+				<textElement/>
+				<text><![CDATA[户]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="622" y="113" width="11" height="19"/>
+				<textElement/>
+				<text><![CDATA[为]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" mode="Transparent" x="622" y="91" width="11" height="20" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None">
+					<font size="10" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					<paragraph lineSpacing="Proportional" tabStopWidth="20"/>
+				</textElement>
+				<text><![CDATA[红]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="622" y="141" width="11" height="19"/>
+				<textElement/>
+				<text><![CDATA[联]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="622" y="103" width="11" height="19"/>
+				<textElement/>
+				<text><![CDATA[联]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="623" y="180" width="11" height="19"/>
+				<textElement/>
+				<text><![CDATA[联]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" mode="Transparent" x="623" y="168" width="11" height="20" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None">
+					<font size="10" isItalic="false" isUnderline="false" isStrikeThrough="false"/>
+					<paragraph lineSpacing="Proportional" tabStopWidth="20"/>
+				</textElement>
+				<text><![CDATA[黄]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="623" y="218" width="11" height="19"/>
+				<textElement/>
+				<text><![CDATA[联]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="623" y="200" width="11" height="19"/>
+				<textElement/>
+				<text><![CDATA[财]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="623" y="209" width="11" height="22"/>
+				<textElement/>
+				<text><![CDATA[务]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="623" y="190" width="11" height="19"/>
+				<textElement/>
+				<text><![CDATA[为]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="168" y="50" width="418" height="30"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{creataRemark}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="165" y="148" width="198" height="32"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{maxAmount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="430" y="179" width="116" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{amount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="525" y="215" width="93" height="25"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{doName}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="66" y="81" width="520" height="31"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{creataRemark2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="66" y="112" width="520" height="29"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{creataRemark3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="68" y="17" width="13" height="42">
+					<printWhenExpression><![CDATA[$F{cashStatus}.equals("1")]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[√]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="117" y="17" width="13" height="42">
+					<printWhenExpression><![CDATA[$F{cashStatus}.equals("2")]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[√]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="169" y="17" width="13" height="42">
+					<printWhenExpression><![CDATA[$F{cashStatus}.equals("3")]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[√]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="217" y="17" width="13" height="42">
+					<printWhenExpression><![CDATA[$F{cashStatus}.equals("4")]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[√]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="547" y="11" width="70" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{printReceiptAccountNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="525" y="27" width="88" height="20"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{receiptData}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+</jasperReport>

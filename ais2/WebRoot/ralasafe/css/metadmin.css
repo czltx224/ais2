@@ -1,0 +1,82 @@
+a {
+	color: #0000ff;
+}
+
+a:visited {
+	color: #0000ff;
+}
+
+a:active {
+	color: #ff0000;
+}
+
+#topDiv{
+	height:10%;
+}
+
+#introDiv{
+	position: absolute;
+	left:5%;
+	top:15%;
+	height:30%;
+}
+
+#userDiv{
+	position:absolute;
+	left:2%;
+	top:50%;
+	width:18%;
+	height:40%;
+	background-color: #B1C3D9;
+	border-width: 1;
+	border-color: #9900CC;
+}
+
+#appDiv{
+	position:absolute;
+	left:20%;
+	top:50%;
+	width:20%;
+	height:40%;
+	background-color: #B1C3D9;
+	border-width: 1;
+	border-color: #9900CC;
+}
+
+#privDiv{
+	position:absolute;
+	left:40%;
+	top:50%;
+	width:20%;
+	height:40%;
+	background-color: #B1C3D9;
+	border-width: 1;
+	border-color: #9900CC;
+}
+
+#uiDiv{
+	position:absolute;
+	left:60%;
+	top:50%;
+	width:20%;
+	height:40%;
+	background-color: #B1C3D9;
+	border-width: 1;
+	border-color: #9900CC;
+}
+
+#filterDiv{
+	position:absolute;
+	left:80%;
+	top:50%;
+	width:18%;
+	height:40%;
+	background-color: #B1C3D9;
+	border-width: 1;
+	border-color: #9900CC;
+}
+
+#container{
+	margin:0;
+	width:96%;
+}

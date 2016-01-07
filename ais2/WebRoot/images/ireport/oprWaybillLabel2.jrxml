@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="oprWaybillLabel2.jrxml" printOrder="Horizontal" pageWidth="268" pageHeight="155" columnWidth="253" leftMargin="15" rightMargin="0" topMargin="0" bottomMargin="0">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="xPath">
+		<![CDATA[/billLadings/printBeans/billLading]]>
+	</queryString>
+	<field name="imgBaseUrl" class="java.lang.String">
+		<fieldDescription><![CDATA[/billLadings/imgBaseUrl]]></fieldDescription>
+	</field>
+	<field name="flightMainNo" class="java.lang.String">
+		<fieldDescription><![CDATA[flightMainNo]]></fieldDescription>
+	</field>
+	<field name="addr" class="java.lang.String">
+		<fieldDescription><![CDATA[addr]]></fieldDescription>
+	</field>
+	<field name="consignee" class="java.lang.String">
+		<fieldDescription><![CDATA[consignee]]></fieldDescription>
+	</field>
+	<field name="startDepart" class="java.lang.String">
+		<fieldDescription><![CDATA[startDepart]]></fieldDescription>
+	</field>
+	<field name="transMode" class="java.lang.String">
+		<fieldDescription><![CDATA[transMode]]></fieldDescription>
+	</field>
+	<field name="dno" class="java.lang.String">
+		<fieldDescription><![CDATA[dno]]></fieldDescription>
+	</field>
+	<field name="piece" class="java.lang.String">
+		<fieldDescription><![CDATA[piece]]></fieldDescription>
+	</field>
+	<field name="faxInTime" class="java.lang.String">
+		<fieldDescription><![CDATA[faxInTime]]></fieldDescription>
+	</field>
+	<field name="printName" class="java.lang.String">
+		<fieldDescription><![CDATA[printName]]></fieldDescription>
+	</field>
+	<field name="printNum" class="java.lang.String">
+		<fieldDescription><![CDATA[printNum]]></fieldDescription>
+	</field>
+	<field name="printTime" class="java.lang.String">
+		<fieldDescription><![CDATA[printTime]]></fieldDescription>
+	</field>
+	<field name="printId" class="java.lang.String">
+		<fieldDescription><![CDATA[printId]]></fieldDescription>
+	</field>
+	<field name="isRound" class="java.lang.String">
+		<fieldDescription><![CDATA[isRound]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="151">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="186" y="138" width="66" height="12"/>
+				<textElement>
+					<font size="8" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{faxInTime}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="85" y="134" width="34" height="17"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{piece}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="18" y="18" width="63" height="12"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{printTime}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="52" y="28" width="199" height="107"/>
+			</rectangle>
+			<line>
+				<reportElement x="65" y="28" width="1" height="107"/>
+			</line>
+			<image>
+				<reportElement x="10" y="0" width="64" height="20"/>
+				<imageExpression><![CDATA[$F{imgBaseUrl}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="54" y="108" width="11" height="28"/>
+				<textElement textAlignment="Left" rotation="None" markup="none">
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[始发]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="68" y="56" width="182" height="34"/>
+				<textElement>
+					<font size="18" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{addr}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="68" y="111" width="181" height="22"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{startDepart}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="54" y="28" width="10" height="28"/>
+				<textElement/>
+				<text><![CDATA[运单]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="68" y="91" width="181" height="17"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{consignee}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="54" y="92" width="10" height="14"/>
+				<textElement/>
+				<text><![CDATA[收]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="54" y="59" width="10" height="28"/>
+				<textElement/>
+				<text><![CDATA[目的]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="68" y="32" width="102" height="20"/>
+				<textElement>
+					<font size="14" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dno}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="52" y="90" width="199" height="1"/>
+			</line>
+			<line>
+				<reportElement x="52" y="109" width="199" height="1"/>
+			</line>
+			<line>
+				<reportElement x="52" y="56" width="199" height="1"/>
+			</line>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="166" y="29" width="85" height="27" forecolor="#000000" backcolor="#33FF33"/>
+				<textElement textAlignment="Center">
+					<font size="15" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{transMode}]]></textFieldExpression>
+			</textField>
+			<ellipse>
+				<reportElement mode="Transparent" x="168" y="29" width="81" height="27">
+					<printWhenExpression><![CDATA[$F{isRound}.equals("true")]]></printWhenExpression>
+				</reportElement>
+			</ellipse>
+			<elementGroup/>
+			<componentElement>
+				<reportElement x="10" y="30" width="36" height="108"/>
+				<jr:Code39 xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" orientation="270" textPosition="bottom">
+					<jr:codeExpression><![CDATA[$F{dno}]]></jr:codeExpression>
+				</jr:Code39>
+			</componentElement>
+			<componentElement>
+				<reportElement x="46" y="1" width="207" height="27"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="USPS" drawText="false" checksumRequired="false" barHeight="35">
+					<jr:codeExpression><![CDATA[$F{dno}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+		</band>
+	</detail>
+</jasperReport>

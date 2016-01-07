@@ -1,0 +1,82 @@
+#nodesDiv div.workflowNode {
+	position: absolute;
+	height: 72px;
+	width: 96px;
+	background-image: url(../img/node_blue.gif);
+	text-align:center;
+	padding:1px;
+}
+#nodesDiv div.workflowName{
+	height: 20px;
+	width: 92px;
+	text-align: center;
+	vertical-align: middle;
+	line-height:20px;
+	color:#6179a0;
+	font-size:13px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+#nodesDiv div.workflowUser{
+	height: 16px;
+	width: 92px;
+	text-align: left;
+	vertical-align: top;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+#nodesDiv div.workflowUser img{
+	margin-left:1px;
+	height:16px;
+	width:10px;
+}
+#nodesDiv div.workflowUser a{
+	margin-left:5px;
+}
+#nodesDiv div.workflowOption{
+	height: 15px;
+	width: 42px;
+	position:absolute;
+	right:4px;
+	bottom:4px;
+	font-size:12px;
+	cursor:crosshair;
+}
+#ruleDiv div.rule{
+	position:absolute;
+	background-color: #ffffe5;
+  border: #c5c8d0 1px solid;
+	z-index:10;
+}
+#ruleDiv div.rule div{
+	position:inherit;
+	margin:5px;
+	white-space:nowrap;
+	color:blue;
+}
+#ruleDiv div.rule div label{
+	width:40px;
+	font-weight:bolder;
+	color:#333333;
+}
+#ruleDiv div.rule div span{
+	white-space:nowrap;
+	margin-right:5px;
+	color:#333333;
+}
+/*流程图加载*/
+#flowLayoutLoadding {
+	position: absolute;
+	top: 1px;
+	right: 2px;
+	border: #5d86ca 1px solid;
+	height: 20px;
+	width: 200px;
+	text-align: left;
+	z-index: 20;
+	color: #fff;
+	background-color: #aa0000;
+	filter: Alpha(Opacity = 80);
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+    
+ <!-- 定时任务供外部访问接口 -->
+ <bean name="/springBeanToRemot" class="org.springframework.remoting.caucho.HessianServiceExporter">
+    <property name="service" ref="springBeanToRemotimpl"/>
+    <property name="serviceInterface" value="com.xbwl.ws.service.ISpringBeanToRemot"/>
+ </bean> 
+
+ <!-- 回单扫描上传回写表外部访问接口 -->
+ <bean name="/ftpUploadImages" class="org.springframework.remoting.caucho.HessianServiceExporter">
+    <property name="service" ref="ftpUploadImagesImpl"/>
+    <property name="serviceInterface" value="com.xbwl.ws.service.IFtpUploadImages"/>
+ </bean> 
+ 
+  <!-- EDI远程调用接口 -->
+ <bean name="/ediOprRemote" class="org.springframework.remoting.caucho.HessianServiceExporter">
+    <property name="service" ref="ediOprRemoteServiceImpl"/>
+    <property name="serviceInterface" value="com.xbwl.ws.service.IEDIOprRemoteService"/>
+ </bean> 
+</beans>
+

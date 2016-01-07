@@ -1,0 +1,43 @@
+.loginDiv {
+	width: 435px;
+	height: 286px;
+	background-image: url('../images/rbac/login.gif');
+    top:30%;
+    left:30%;
+    position: absolute;
+}
+
+.myFont {
+	font-family: "华文细黑";
+}
+
+.loginTextField {
+	border: solid;
+	border-width: 1px;
+	border-color: #8FD0F8;
+	width: 180px;
+	height: 22px;
+}
+
+.loginCheckCodeTextField {
+	border: solid;
+	border-width: 1px;
+	border-color: #8FD0F8;
+	width: 55px;
+	height: 22px;
+}
+
+.loginBtn {
+	BORDER-RIGHT: #7b9ebd 1px solid;
+	PADDING-RIGHT: 2px;
+	BORDER-TOP: #7b9ebd 1px solid;
+	PADDING-LEFT: 2px;
+	FONT-SIZE: 12px;
+	FILTER: progid :     DXImageTransform . Microsoft .
+		Gradient(GradientType =   0, StartColorStr = #ffffff, EndColorStr = #cecfde);
+	BORDER-LEFT: #7b9ebd 1px solid;
+	CURSOR: hand;
+	COLOR: black;
+	PADDING-TOP: 2px;
+	BORDER-BOTTOM: #7b9ebd 1px solid;
+}

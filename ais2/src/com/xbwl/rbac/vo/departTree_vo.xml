@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net
+          http://dozer.sourceforge.net/schema/beanmapping.xsd">
+	  <mapping date-format="yyyy-MM-dd">
+		<class-a>com.xbwl.entity.SysDepart</class-a>
+		<class-b>com.xbwl.rbac.vo.DepartTree</class-b>
+		
+		<field>
+		<a>departName</a>
+		<b>text</b>
+		</field>
+		
+		<field>
+		<a>departId</a>
+		<b>id</b>
+		</field>
+		
+		
+		<field>
+			<a>departs</a>
+			<b>children</b>
+		</field>
+		
+		
+		
+	</mapping>
+</mappings>

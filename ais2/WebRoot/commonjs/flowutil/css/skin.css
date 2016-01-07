@@ -1,0 +1,380 @@
+/*
+TABLE {
+	BORDER-BOTTOM: #d5d5d5 1px solid; BORDER-LEFT: #d5d5d5 1px solid; BORDER-TOP: #d5d5d5 1px solid; BORDER-RIGHT: #d5d5d5 1px solid
+}
+TABLE TD {
+	BORDER-BOTTOM: #d5d5d5 1px solid; BORDER-LEFT: #d5d5d5 1px solid; BORDER-TOP: #d5d5d5 1px solid; BORDER-RIGHT: #d5d5d5 1px solid
+}
+TABLE TH {
+	BORDER-BOTTOM: #d5d5d5 1px solid; BORDER-LEFT: #d5d5d5 1px solid; BORDER-TOP: #d5d5d5 1px solid; BORDER-RIGHT: #d5d5d5 1px solid
+}*/
+A {
+	COLOR: #6a6a6a; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #00371b; TEXT-DECORATION: underline
+}
+.topTitle {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 31px; MARGIN: 3px 0px; PADDING-LEFT: 5px; WIDTH: 100%; PADDING-RIGHT: 5px; BACKGROUND: url(/vskin/orange/images/pageTitBack.gif) repeat-x; HEIGHT: 31px; FONT-WEIGHT: bold; PADDING-TOP: 0px
+}
+TR.header {
+	Z-INDEX: 1; PADDING-BOTTOM: 0px; LINE-HEIGHT: 25px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; WHITE-SPACE: nowrap; BACKGROUND: url(/vskin/orange/images/tableTitBack.gif) repeat-x; HEIGHT: 25px; WORD-BREAK: keep-all; FONT-WEIGHT: bold; PADDING-TOP: 0px
+}
+DIV.header {
+	Z-INDEX: 1; PADDING-BOTTOM: 0px; LINE-HEIGHT: 25px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; WHITE-SPACE: nowrap; BACKGROUND: url(/vskin/orange/images/tableTitBack.gif) repeat-x; HEIGHT: 25px; WORD-BREAK: keep-all; FONT-WEIGHT: bold; PADDING-TOP: 0px
+}
+THEAD {
+	Z-INDEX: 1; PADDING-BOTTOM: 0px; LINE-HEIGHT: 25px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; WHITE-SPACE: nowrap; BACKGROUND: url(/vskin/orange/images/tableTitBack.gif) repeat-x; HEIGHT: 25px; WORD-BREAK: keep-all; FONT-WEIGHT: bold; PADDING-TOP: 0px
+}
+TR.dataLight {
+	BACKGROUND-COLOR: #ffffff
+}
+TR.dataDark {
+	BACKGROUND-COLOR: #f8f7fd
+}
+TD.fieldname {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0px; LINE-HEIGHT: 23px; BACKGROUND-COLOR: #f3f3f3; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; PADDING-TOP: 0px
+}
+TD.fieldvalue {
+	PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; VERTICAL-ALIGN: middle; PADDING-TOP: 0px
+}
+FIELDSET {
+	PADDING-BOTTOM: 5px; MARGIN: 5px 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #000000; FONT-WEIGHT: bold; PADDING-TOP: 5px
+}
+LEGEND {
+	PADDING-BOTTOM: 5px; MARGIN: 5px 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #000000; FONT-WEIGHT: bold; PADDING-TOP: 5px
+}
+.tabCapRight {
+	POSITION: absolute; COLOR: #2a3cc3; TOP: 0px; CURSOR: pointer; RIGHT: 50px; FONT-WEIGHT: normal
+}
+.divLine {
+	POSITION: relative; MARGIN: 5px 0px; WIDTH: 100%; HEIGHT: 20px; BORDER-TOP: #c8c8c8 2px solid
+}
+#docReplayList {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 22px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; MARGIN-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#docReplayList UL {
+	MARGIN-LEFT: 20px
+}
+#docviewlist UL {
+	MARGIN-LEFT: 20px
+}
+#docReplayList UL LI {
+	LIST-STYLE-POSITION: outside !important; LIST-STYLE-TYPE: disc !important
+}
+#docviewlist UL LI {
+	LIST-STYLE-POSITION: outside !important; LIST-STYLE-TYPE: disc !important
+}
+#docReplayList UL LI UL {
+	MARGIN-LEFT: 40px
+}
+#docviewlist UL LI UL {
+	MARGIN-LEFT: 40px
+}
+#docReplayList UL UL LI {
+	LIST-STYLE-POSITION: outside !important; LIST-STYLE-TYPE: circle !important
+}
+#docviewlist UL UL LI {
+	LIST-STYLE-POSITION: outside !important; LIST-STYLE-TYPE: circle !important
+}
+#docReplayList UL UL UL LI {
+	LIST-STYLE-POSITION: outside !important; LIST-STYLE-TYPE: square !important
+}
+#docviewlist UL UL UL LI {
+	LIST-STYLE-POSITION: outside !important; LIST-STYLE-TYPE: square !important
+}
+#pageNavigator {
+	TEXT-ALIGN: center
+}
+#pageNavigator DIV {
+	MARGIN: 5px 0px
+}
+#pageNavigator A {
+	BORDER-BOTTOM: #abcd05 1px solid; BORDER-LEFT: #abcd05 1px solid; PADDING-BOTTOM: 2px; MARGIN: 0px 2px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #abcd05; BORDER-TOP: #abcd05 1px solid; BORDER-RIGHT: #abcd05 1px solid; PADDING-TOP: 2px
+}
+#pageNavigator A:hover {
+	BACKGROUND-COLOR: #b1d210; COLOR: #ffffff
+}
+#pageNavigator .current {
+	BORDER-BOTTOM: #abcd05 1px solid; BORDER-LEFT: #abcd05 1px solid; PADDING-BOTTOM: 2px; BACKGROUND-COLOR: #b1d210; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #ffffff; BORDER-TOP: #abcd05 1px solid; BORDER-RIGHT: #abcd05 1px solid; PADDING-TOP: 2px
+}
+#pageNavigator .disabled {
+	BORDER-BOTTOM: #c5c8d0 1px solid; BORDER-LEFT: #c5c8d0 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; COLOR: #c5c8d0; BORDER-TOP: #c5c8d0 1px solid; BORDER-RIGHT: #c5c8d0 1px solid; PADDING-TOP: 2px
+}
+#pageNavigator LABEL {
+	COLOR: #abcd05
+}
+#pageNavigator LABEL INPUT {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; LINE-HEIGHT: 14px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+#categorySelect DIV {
+	MARGIN-LEFT: 20px
+}
+#categorySelect IMG .fimg {
+	MARGIN-RIGHT: -8px
+}
+#categorydoc {
+	LINE-HEIGHT: 22px
+}
+#categorydoc A {
+	TEXT-DECORATION: underline
+}
+#categorydoc DIV A {
+	MARGIN-RIGHT: 10px
+}
+#categorydoc UL {
+	MARGIN: 4px 0px 0px 25px
+}
+.contentstyle {
+	BORDER-BOTTOM: #a0bbe8 1px solid; BORDER-LEFT: #a0bbe8 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; WIDTH: 100%; PADDING-RIGHT: 2px; BORDER-TOP: #a0bbe8 1px solid; BORDER-RIGHT: #a0bbe8 1px solid; PADDING-TOP: 2px
+}
+.shadetabs {
+	TEXT-ALIGN: left; MARGIN: 1px 0px 0px
+}
+.shadetabs LI {
+	MARGIN: 0px 1px 0px 0px; DISPLAY: inline
+}
+.shadetabs LI A {
+	BORDER-BOTTOM: #a0bbe8 0px solid; BORDER-LEFT: #a0bbe8 1px solid; PADDING-BOTTOM: 3px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; BACKGROUND: url(/vskin/orange/images/cardTab.gif) repeat-x; HEIGHT: 21px; BORDER-TOP: #a0bbe8 1px solid; BORDER-RIGHT: #a0bbe8 1px solid; PADDING-TOP: 3px
+}
+.shadetabs LI A:hover {
+	TEXT-DECORATION: underline
+}
+.shadetabs LI.selected {
+	FONT-WEIGHT: bold
+}
+.shadetabs LI.selected A {
+	BACKGROUND: url(../img/cardTab_B.gif) repeat-x; COLOR: #2b2b2b
+}
+.shadetabs LI.selected A:hover {
+	TEXT-DECORATION: none
+}
+TABLE.layouttable {
+	BORDER-BOTTOM: #c8c8c8 1px solid; BORDER-LEFT: #c8c8c8 1px solid; MARGIN-TOP: 10px; WIDTH: 100%; BORDER-TOP: #c8c8c8 1px solid; BORDER-RIGHT: #c8c8c8 1px solid
+}
+TABLE.detailtable {
+	BORDER-BOTTOM: #c8c8c8 1px solid; BORDER-LEFT: #c8c8c8 1px solid; MARGIN-TOP: 10px; WIDTH: 100%; BORDER-TOP: #c8c8c8 1px solid; BORDER-RIGHT: #c8c8c8 1px solid
+}
+TABLE.layouttable CAPTION {
+	BORDER-BOTTOM: #c8c8c8 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #c8c8c8 1px solid; PADDING-BOTTOM: 4px; LINE-HEIGHT: 30px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; BORDER-TOP: #c8c8c8 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #c8c8c8 1px solid; PADDING-TOP: 4px
+}
+TABLE.detailtable CAPTION {
+	BORDER-BOTTOM: #c8c8c8 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #c8c8c8 1px solid; PADDING-BOTTOM: 4px; LINE-HEIGHT: 30px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; BORDER-TOP: #c8c8c8 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #c8c8c8 1px solid; PADDING-TOP: 4px
+}
+TABLE.layouttable TD {
+	BORDER-BOTTOM: #d5d5d5 1px solid; BORDER-LEFT: #d5d5d5 1px solid; LINE-HEIGHT: 25px; VERTICAL-ALIGN: middle; BORDER-TOP: #d5d5d5 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #d5d5d5 1px solid
+}
+TABLE.layouttable TH {
+	BORDER-BOTTOM: #d5d5d5 1px solid; BORDER-LEFT: #d5d5d5 1px solid; LINE-HEIGHT: 25px; VERTICAL-ALIGN: middle; BORDER-TOP: #d5d5d5 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #d5d5d5 1px solid
+}
+TABLE.detailtable TH {
+	BORDER-BOTTOM: #d5d5d5 1px solid; BORDER-LEFT: #d5d5d5 1px solid; LINE-HEIGHT: 25px; VERTICAL-ALIGN: middle; BORDER-TOP: #d5d5d5 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #d5d5d5 1px solid
+}
+.detailtable TD {
+	BORDER-BOTTOM: #d5d5d5 1px solid; BORDER-LEFT: #d5d5d5 1px solid; LINE-HEIGHT: 25px; VERTICAL-ALIGN: middle; BORDER-TOP: #d5d5d5 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #d5d5d5 1px solid
+}
+TABLE.layouttable TH {
+	BACKGROUND-COLOR: #b1d210 !important; PADDING-LEFT: 4px; COLOR: #fff; WORD-BREAK: keep-all
+}
+TABLE.detailtable TH {
+	BACKGROUND-COLOR: #b1d210 !important; PADDING-LEFT: 4px; COLOR: #fff; WORD-BREAK: keep-all
+}
+TABLE.subtable {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+TABLE.subtable TD {
+	BORDER-BOTTOM: #d5e6c4 1px solid; BORDER-LEFT: #d5e6c4 1px solid; BORDER-TOP: #d5e6c4 1px solid; BORDER-RIGHT: #d5e6c4 1px solid
+}
+#con {
+	BORDER-LEFT: #a6b1a0 1px solid; MARGIN: 2px 0px 0px; WIDTH: 100%; WHITE-SPACE: nowrap; FONT-SIZE: 12px
+}
+#tags {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; WHITE-SPACE: nowrap; HEIGHT: 23px; PADDING-TOP: 0px
+}
+#tags LI {
+	BACKGROUND: url(/img/synchroBack02.gif) repeat-x; FLOAT: left; HEIGHT: 23px; BORDER-TOP: #d8e3d2 1px solid; BORDER-RIGHT: #d8e3d2 1px solid
+}
+#tags LI A {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 23px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; FLOAT: left; HEIGHT: 23px; COLOR: #555555; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+#tags LI.emptyTag {
+	WIDTH: 4px; BACKGROUND: none transparent scroll repeat 0% 0%; HEIGHT: 23px
+}
+#tags LI.lastTag {
+	BORDER-RIGHT: #d8e3d2 1px solid
+}
+#tags LI.selectTag {
+	POSITION: relative; MARGIN-BOTTOM: -100px; BACKGROUND: url(/vskin/orange/images/synchroBack01.gif) repeat-x; HEIGHT: 25px
+}
+#tags LI.selectTag A {
+	Z-INDEX: 6; LINE-HEIGHT: 24px; HEIGHT: 24px; COLOR: #000; FONT-WEIGHT: bold
+}
+#tagContent {
+	BORDER-BOTTOM: #a8b1a0 1px solid; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #fff; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: #a8b1a0 1px solid; BORDER-RIGHT: #a8b1a0 1px solid; PADDING-TOP: 0px
+}
+.tagContent {
+	PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #ffffff; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; DISPLAY: none; COLOR: #474747; PADDING-TOP: 0px
+}
+TR.sydatamore TD {
+	BORDER-TOP: #d5d5d5 1px solid
+}
+TR.syheader {
+	BACKGROUND: url(../img/synchroBack02.gif) repeat-x
+}
+TR.syfixheader {
+	BACKGROUND: url(../img/synchroBack02.gif) repeat-x
+}
+.syheader TD {
+	BORDER-BOTTOM: #ffffff 1px solid; BORDER-LEFT: #ffffff 1px solid; BORDER-TOP: 0px; BORDER-RIGHT: #ffffff 1px solid
+}
+#synergyBar {
+	BORDER-BOTTOM: #d5d5d5 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #d5d5d5 1px solid; LINE-HEIGHT: 22px; MARGIN: 2px 0px 0px; BACKGROUND: url(/vskin/orange/images/synchroBack02.gif) repeat-x; HEIGHT: 22px; COLOR: #555555; BORDER-TOP: #d5d5d5 1px solid; BORDER-RIGHT: #d5d5d5 1px solid
+}
+#synergyBar IMG {
+	MARGIN-LEFT: 4px
+}
+#synergyBar A {
+	COLOR: #555555; VERTICAL-ALIGN: middle
+}
+#synergyBar .leftmenu A {
+	PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; COLOR: #024847; MARGIN-LEFT: 2px; MARGIN-RIGHT: 2px; TEXT-DECORATION: none; PADDING-TOP: 2px
+}
+.leftmenu A:active {
+	PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; COLOR: #024847; MARGIN-LEFT: 2px; MARGIN-RIGHT: 2px; TEXT-DECORATION: none; PADDING-TOP: 2px
+}
+.leftmenu A:visited {
+	PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; COLOR: #024847; MARGIN-LEFT: 2px; MARGIN-RIGHT: 2px; TEXT-DECORATION: none; PADDING-TOP: 2px
+}
+.leftmenu A:link {
+	PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; COLOR: #024847; MARGIN-LEFT: 2px; MARGIN-RIGHT: 2px; TEXT-DECORATION: none; PADDING-TOP: 2px
+}
+#synergyBar .leftmenu A:hover {
+	BACKGROUND: url(../img/buttonBack_1.gif) repeat-x; COLOR: #ffffff
+}
+#synergyBar .leftmarign {
+	LINE-HEIGHT: 22px; FLOAT: left; HEIGHT: 22px
+}
+#synergyBar .plus {
+	MARGIN-TOP: 5px; FLOAT: left
+}
+#synergyBar .spanplus {
+	MARGIN-TOP: 5px; FLOAT: left
+}
+#synergyBar .rightmarign {
+	FLOAT: right; RIGHT: 1px
+}
+#synergyBar .bottomrightmarign {
+	POSITION: absolute; LEFT: 150px
+}
+#synergyTitle {
+	BORDER-BOTTOM: 0px; LINE-HEIGHT: 26px; BACKGROUND: url(/img/synchroBack01.gif) repeat-x; HEIGHT: 26px; FONT-WEIGHT: bold
+}
+#synergyTitle A {
+	TEXT-ALIGN: left
+}
+TABLE.sydata {
+	BORDER-LEFT: #d5d5d5 1px solid; PADDING-BOTTOM: 0px; BORDER-RIGHT-WIDTH: 0px; MARGIN: 0px auto; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; CLEAR: both; PADDING-TOP: 0px
+}
+TABLE.sydata THEAD {
+	BORDER-BOTTOM: #ffffff 0px solid; BORDER-LEFT: #ffffff 1px solid; BORDER-TOP: #ffffff 0px solid; BORDER-RIGHT: #ffffff 0px solid
+}
+.sydatalight TD {
+	BORDER-BOTTOM: #d5d5d5 1px solid; BORDER-LEFT: #d5d5d5 1px solid; LINE-HEIGHT: 22px; VERTICAL-ALIGN: middle; BORDER-TOP: #d5d5d5 1px solid; BORDER-RIGHT: #d5d5d5 1px solid
+}
+.dataLight TD {
+	BORDER-BOTTOM: #d5d5d5 1px solid; BORDER-LEFT: #d5d5d5 1px solid; LINE-HEIGHT: 22px; VERTICAL-ALIGN: middle; BORDER-TOP: #d5d5d5 1px solid; BORDER-RIGHT: #d5d5d5 1px solid
+}
+.sydatadark TD {
+	BORDER-BOTTOM: #d5d5d5 1px solid; BORDER-LEFT: #d5d5d5 1px solid; LINE-HEIGHT: 22px; VERTICAL-ALIGN: middle; BORDER-TOP: #d5d5d5 1px solid; BORDER-RIGHT: #d5d5d5 1px solid
+}
+.dataDark TD {
+	BORDER-BOTTOM: #d5d5d5 1px solid; BORDER-LEFT: #d5d5d5 1px solid; LINE-HEIGHT: 22px; VERTICAL-ALIGN: middle; BORDER-TOP: #d5d5d5 1px solid; BORDER-RIGHT: #d5d5d5 1px solid
+}
+.bottomsydatalight TD {
+	BORDER-BOTTOM: #d5d5d5 1px solid; BORDER-LEFT: #ffffff 1px solid; LINE-HEIGHT: 24px; VERTICAL-ALIGN: middle
+}
+.bottomsydatadark TD {
+	BORDER-LEFT: #ffffff 1px solid; LINE-HEIGHT: 24px; VERTICAL-ALIGN: middle
+}
+.synergywidth {
+	WIDTH: 200px
+}
+#startwftable UL {
+	PADDING-BOTTOM: 0px; MARGIN-TOP: 3px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; MARGIN-BOTTOM: 0px; MARGIN-LEFT: 20px; PADDING-TOP: 0px
+}
+#doctypeselect UL {
+	PADDING-BOTTOM: 0px; MARGIN-TOP: 3px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; MARGIN-BOTTOM: 0px; MARGIN-LEFT: 20px; PADDING-TOP: 0px
+}
+#startwftable LI {
+	FONT-WEIGHT: bold
+}
+#doctypeselect LI {
+	FONT-WEIGHT: bold
+}
+#startwftable A {
+	FONT-WEIGHT: normal
+}
+#doctypeselect A {
+	FONT-WEIGHT: normal
+}
+#windowDiv {
+	Z-INDEX: 2000; BORDER-BOTTOM: #7f9db9 1px solid; POSITION: absolute; BORDER-LEFT: #7f9db9 1px solid; BACKGROUND-COLOR: #ffffff; BORDER-TOP: #7f9db9 1px solid; TOP: 50px; BORDER-RIGHT: #7f9db9 1px solid
+}
+#windowDiv DIV {
+	POSITION: relative; WIDTH: 100%; CURSOR: move
+}
+#windowDiv IFRAME {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; WIDTH: 100%; HEIGHT: 100%; OVERFLOW: scroll; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+INPUT {
+	
+}
+SELECT {
+	BORDER-BOTTOM: #abcd05 1px solid; BORDER-LEFT: #abcd05 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: #abcd05 1px solid; BORDER-RIGHT: #abcd05 1px solid; PADDING-TOP: 2px
+}
+TEXTAREA {
+	BORDER-BOTTOM: #abcd05 1px solid; BORDER-LEFT: #abcd05 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: #abcd05 1px solid; BORDER-RIGHT: #abcd05 1px solid; PADDING-TOP: 2px
+}
+ > INPUT {
+	; BACKGROUND-IMAGE: expression((this.type=="submit")?"url:(/img/buttonBack_1.gif)":"style"); ; BORDER: expression((this.type=="text"||this.type=="submit"||this.type=="file")?"1px #abcd05 solid":"style")
+}
+UNKNOWN {
+	BORDER-BOTTOM: #abcd05 1px solid; BORDER-LEFT: #abcd05 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: #abcd05 1px solid; BORDER-RIGHT: #abcd05 1px solid; PADDING-TOP: 2px
+}
+INPUT[type='checkbox'] {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+INPUT[type='radio'] {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+/*
+BUTTON {
+	BORDER-BOTTOM: #abcd05 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #abcd05 1px solid; PADDING-BOTTOM: 1px; LINE-HEIGHT: 16px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: url(/vskin/orange/images/buttonBack_1.gif) repeat-x; HEIGHT: 20px; COLOR: #ffffff; BORDER-TOP: #abcd05 1px solid; CURSOR: pointer; BORDER-RIGHT: #abcd05 1px solid; PADDING-TOP: 1px
+}*/
+.buttonDis {
+	BORDER-BOTTOM: #abcd05 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #abcd05 1px solid; PADDING-BOTTOM: 1px; LINE-HEIGHT: 16px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: url(/vskin/orange/images/buttonBack_1.gif) repeat-x; HEIGHT: 20px; COLOR: #ffffff; BORDER-TOP: #abcd05 1px solid; CURSOR: pointer; BORDER-RIGHT: #abcd05 1px solid; PADDING-TOP: 1px
+}
+.btn {
+	BORDER-BOTTOM: #abcd05 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #abcd05 1px solid; PADDING-BOTTOM: 1px; LINE-HEIGHT: 16px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: url(/vskin/orange/images/buttonBack_1.gif) repeat-x; HEIGHT: 20px; COLOR: #ffffff; BORDER-TOP: #abcd05 1px solid; CURSOR: pointer; BORDER-RIGHT: #abcd05 1px solid; PADDING-TOP: 1px
+}
+.button {
+	BORDER-BOTTOM: #abcd05 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #abcd05 1px solid; PADDING-BOTTOM: 1px; LINE-HEIGHT: 16px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: url(/vskin/orange/images/buttonBack_1.gif) repeat-x; HEIGHT: 20px; COLOR: #ffffff; BORDER-TOP: #abcd05 1px solid; CURSOR: pointer; BORDER-RIGHT: #abcd05 1px solid; PADDING-TOP: 1px
+}
+INPUT[type='submit'] {
+	BORDER-BOTTOM: #abcd05 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #abcd05 1px solid; PADDING-BOTTOM: 1px; LINE-HEIGHT: 16px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: url(/vskin/orange/images/buttonBack_1.gif) repeat-x; HEIGHT: 20px; COLOR: #ffffff; BORDER-TOP: #abcd05 1px solid; CURSOR: pointer; BORDER-RIGHT: #abcd05 1px solid; PADDING-TOP: 1px
+}
+.buttonDis {
+	BACKGROUND: url(../img/buttonBack_1.gif) repeat-x
+}
+#pagemenubar {
+	BORDER-BOTTOM: #e3f0f9 0px solid; BORDER-LEFT: #e3f0f9 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; WIDTH: 100%; PADDING-RIGHT: 2px; BACKGROUND: url(/vskin/orange/images/tableTitBack.gif) repeat-x; HEIGHT: 25px; BORDER-TOP: #e3f0f9 0px solid; BORDER-RIGHT: #e3f0f9 1px solid; PADDING-TOP: 2px
+}
+.buttDiv {
+	BORDER-BOTTOM: #e3f0f9 0px solid; BORDER-LEFT: #e3f0f9 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; WIDTH: 100%; PADDING-RIGHT: 2px; BACKGROUND: url(/vskin/orange/images/tableTitBack.gif) repeat-x; HEIGHT: 25px; BORDER-TOP: #e3f0f9 0px solid; BORDER-RIGHT: #e3f0f9 1px solid; PADDING-TOP: 2px
+}
+#pagemenubar BUTTON {
+	MARGIN: 0px 5px 0px 2px
+}
+.buttDiv BUTTON {
+	MARGIN: 0px 5px 0px 2px
+}

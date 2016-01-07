@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net
+          http://dozer.sourceforge.net/schema/beanmapping.xsd">
+	  <mapping date-format="yyyy-MM-dd">
+		<class-a>org.ralasafe.privilege.Privilege</class-a>
+		<class-b>com.xbwl.rbac.vo.MenuTree</class-b>
+		
+		<field>
+		<a>name</a>
+		<b>text</b>
+		</field>
+		
+		<field>
+			<a>isLeaf</a>
+			<b>leaf</b>
+		</field>
+		
+		<field>
+			<a>url</a>
+			<b>href1</b>
+		</field>
+		
+	</mapping>
+</mappings>

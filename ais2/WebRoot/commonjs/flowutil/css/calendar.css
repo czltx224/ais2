@@ -1,0 +1,252 @@
+.calTop {
+	BORDER-BOTTOM: #858585 1px solid; POSITION: relative; MARGIN: 5px 0px; HEIGHT: 25px
+}
+.calTurnPage {
+	FLOAT: left
+}
+.calTurnPage DIV {
+	FLOAT: left
+}
+.calPreviou {
+	WIDTH: 8px; HEIGHT: 14px; CURSOR: pointer
+}
+.calNext {
+	WIDTH: 8px; HEIGHT: 14px; CURSOR: pointer
+}
+.calPreviou {
+	BACKGROUND: url(/vskin/orange/images/calendarPreviou.gif) no-repeat
+}
+.calNext {
+	BACKGROUND: url(/vskin/orange/images/calendarNext.gif) no-repeat
+}
+.calNavtime {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 0px
+}
+.calTurnPage .calTurnBtn {
+	MARGIN: 0px 0px 0px 10px; HEIGHT: 20px
+}
+.calViewMod {
+	FLOAT: right
+}
+.calViewMod DIV {
+	TEXT-ALIGN: center; LINE-HEIGHT: 17px; MARGIN: 0px 3px; WIDTH: 25px; FLOAT: left; HEIGHT: 17px; COLOR: #ffffff; CURSOR: pointer
+}
+.calViewMod .noSelectView {
+	BORDER-BOTTOM: #696969 1px solid; BORDER-LEFT: #696969 1px solid; BACKGROUND: url(/vskin/orange/images/calViewStyleBack.gif); BORDER-TOP: #696969 1px solid; BORDER-RIGHT: #696969 1px solid
+}
+.calViewMod .selectView {
+	BORDER-BOTTOM: #c9750a 1px solid; BORDER-LEFT: #c9750a 1px solid; BACKGROUND: url(/vskin/orange/images/calViewStyleBack_B.gif); BORDER-TOP: #c9750a 1px solid; BORDER-RIGHT: #c9750a 1px solid
+}
+.messageDiv {
+	POSITION: absolute; PADDING-BOTTOM: 2px; BACKGROUND-COLOR: #aa0000; PADDING-LEFT: 2px; WIDTH: 150px; PADDING-RIGHT: 2px; COLOR: #ffffff; RIGHT: 100px; PADDING-TOP: 2px
+}
+.calViewTab {
+	BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid
+}
+.percent {
+	WIDTH: 99.5%
+}
+.percentA {
+	WIDTH: 49.5%
+}
+.calViewTit {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0px; LINE-HEIGHT: 20px; PADDING-LEFT: 10px; PADDING-RIGHT: 0px; BACKGROUND: url(/vskin/orange/images/calViewTitBack.gif) repeat-x; HEIGHT: 20px; COLOR: #2d2d2d; FONT-WEIGHT: bold; PADDING-TOP: 0px
+}
+.calViewTab TH {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0px; LINE-HEIGHT: 20px; PADDING-LEFT: 10px; PADDING-RIGHT: 0px; BACKGROUND: url(/vskin/orange/images/calViewTitBack.gif) repeat-x; HEIGHT: 20px; COLOR: #2d2d2d; FONT-WEIGHT: bold; PADDING-TOP: 0px
+}
+.calViewTab TD {
+	BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid
+}
+.calVieToday {
+	BACKGROUND-COLOR: #feefdb
+}
+.calScroll {
+	HEIGHT: 130px; OVERFLOW: auto
+}
+.miniCalDiv {
+	BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 5px; MARGIN: 0px 0px 5px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 0px
+}
+.miniCalDivTit {
+	BORDER-BOTTOM: #c0c0c0 1px solid; POSITION: relative; BORDER-LEFT: 0px; PADDING-BOTTOM: 2px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px; BACKGROUND: url(/vskin/orange/images/calendarMinCalTitBack.gif) repeat-x; HEIGHT: 20px; BORDER-TOP: 0px; FONT-WEIGHT: bold; BORDER-RIGHT: 0px; PADDING-TOP: 2px
+}
+.miniCalDivTit A {
+	COLOR: #2d2d2d
+}
+.miniCalDivFont {
+	TEXT-ALIGN: center; WIDTH: 130px
+}
+.miniCalDivCon {
+	WORD-WRAP: break-word
+}
+.miniCalDivCon UL {
+	MARGIN: 2px 0px 7px 5px
+}
+.miniCalTab {
+	BORDER-BOTTOM: #858585 1px solid; BORDER-LEFT: #858585 1px solid; MARGIN: 5px; WIDTH: 175px; BORDER-TOP: #858585 1px solid; BORDER-RIGHT: #858585 1px solid
+}
+.miniCalTab TR {
+	HEIGHT: 18px
+}
+.miniCalTab TH {
+	BORDER-BOTTOM: #858585 1px solid; BORDER-LEFT: #858585 0px solid; LINE-HEIGHT: 18px; BORDER-TOP: #858585 0px solid; BORDER-RIGHT: #858585 0px solid
+}
+.miniCalTab TD {
+	BORDER-BOTTOM: 0px; TEXT-ALIGN: center; BORDER-LEFT: 0px; LINE-HEIGHT: 18px; BORDER-TOP: 0px; CURSOR: pointer; BORDER-RIGHT: 0px
+}
+.outMonthText {
+	COLOR: #cdcdcd
+}
+.todayText {
+	BACKGROUND-COLOR: #b1d210; COLOR: #ffffff
+}
+.currentDate {
+	BACKGROUND-COLOR: #367ecc; COLOR: #ffffff
+}
+.minCalCapPuck {
+	POSITION: absolute; WIDTH: 11px; HEIGHT: 11px; TOP: 6px; CURSOR: pointer; LEFT: 7px
+}
+.minCalCapPuck_B {
+	POSITION: absolute; WIDTH: 11px; HEIGHT: 11px; TOP: 6px; CURSOR: pointer; LEFT: 7px
+}
+.minCalCapPuck {
+	BACKGROUND: url(/vskin/orange/images/pucker_A.gif) no-repeat
+}
+.minCalCapPuck_B {
+	BACKGROUND: url(/vskin/orange/images/pucker_B.gif) no-repeat
+}
+.divBorder {
+	BORDER-BOTTOM: #dcdcdc 1px solid; BORDER-LEFT: #dcdcdc 1px solid; BORDER-TOP: #dcdcdc 1px solid; BORDER-RIGHT: #dcdcdc 1px solid
+}
+.calButton {
+	BORDER-BOTTOM: #c9750a 1px solid; BORDER-LEFT: #c9750a 1px solid; PADDING-BOTTOM: 0px; LINE-HEIGHT: 18px; MARGIN: 0px 5px 0px 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: url(/vskin/orange/images/calendarBtnBack.gif) repeat-x; HEIGHT: 19px; COLOR: #ffffff; BORDER-TOP: #c9750a 1px solid; BORDER-RIGHT: #c9750a 1px solid; PADDING-TOP: 0px
+}
+#datePicker {
+	Z-INDEX: 400; BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; WIDTH: 220px; HEIGHT: 185px; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid
+}
+#timePicker {
+	Z-INDEX: 400; BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; WIDTH: 160px; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid
+}
+#datePicker A {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; CURSOR: default; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+#timePicker A {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; CURSOR: default; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+#dateYMPicker A {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; CURSOR: default; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+#datePicker TABLE {
+	Z-INDEX: 400; BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BACKGROUND-COLOR: #ffffff; HEIGHT: 100%; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+#timePicker TABLE {
+	Z-INDEX: 400; BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BACKGROUND-COLOR: #ffffff; HEIGHT: 100%; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+#dateYMPicker TABLE {
+	Z-INDEX: 400; BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BACKGROUND-COLOR: #ffffff; HEIGHT: 100%; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+#datePicker TD {
+	TEXT-ALIGN: center; LINE-HEIGHT: 18px; WIDTH: 30px; HEIGHT: 18px; FONT-SIZE: 11px; VERTICAL-ALIGN: middle
+}
+#timePicker TD {
+	TEXT-ALIGN: center; LINE-HEIGHT: 18px; WIDTH: 30px; HEIGHT: 18px; FONT-SIZE: 11px; VERTICAL-ALIGN: middle
+}
+#dateYMPicker TD {
+	TEXT-ALIGN: center; LINE-HEIGHT: 18px; WIDTH: 30px; HEIGHT: 18px; FONT-SIZE: 11px; VERTICAL-ALIGN: middle
+}
+#datePicker TR.header {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #b1d210; COLOR: #ffffff
+}
+#datePicker TR.footer {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #b1d210; COLOR: #ffffff
+}
+#dateYMPicker TR.header {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #b1d210; COLOR: #ffffff
+}
+#dateYMPicker TR.footer {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #b1d210; COLOR: #ffffff
+}
+#timePicker TR.header {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #b1d210; COLOR: #ffffff
+}
+#timePicker TR.footer {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #b1d210; COLOR: #ffffff
+}
+#datePicker TR.header TD {
+	BORDER-BOTTOM: #ffffff 1px solid; COLOR: #ffffff
+}
+#dateYMPicker TR.header TD {
+	BORDER-BOTTOM: #ffffff 1px solid; COLOR: #ffffff
+}
+#timePicker TR.header TD {
+	BORDER-BOTTOM: #ffffff 1px solid; COLOR: #ffffff
+}
+#datePicker TR.header A {
+	COLOR: #ffffff
+}
+#datePicker TR.footer A {
+	COLOR: #ffffff
+}
+#dateYMPicker TR.header A {
+	COLOR: #ffffff
+}
+#dateYMPicker TR.footer A {
+	COLOR: #ffffff
+}
+#timePicker TR.header A {
+	COLOR: #ffffff
+}
+#timePicker TR.footer A {
+	COLOR: #ffffff
+}
+#datePicker TR.header A:hover {
+	COLOR: #ffff00; FONT-WEIGHT: bold
+}
+#dateYMPicker TR.header A:hover {
+	COLOR: #ffff00; FONT-WEIGHT: bold
+}
+#timePicker TR.header A:hover {
+	COLOR: #ffff00; FONT-WEIGHT: bold
+}
+#datePicker TR.footer A:hover {
+	COLOR: #ffff00; FONT-WEIGHT: bold
+}
+#dateYMPicker TR.footer A:hover {
+	COLOR: #ffff00; FONT-WEIGHT: bold
+}
+#timePicker TR.footer A:hover {
+	COLOR: #ffff00; FONT-WEIGHT: bold
+}
+#timePicker .hour {
+	BACKGROUND-COLOR: #feefdb
+}
+#timePicker .minute {
+	BACKGROUND-COLOR: #ffffff
+}
+#datePicker .date A {
+	COLOR: #c9750a
+}
+#timePicker A {
+	COLOR: #c9750a
+}
+#datePicker .out A {
+	COLOR: #cccccc
+}
+#datePicker .today A {
+	BACKGROUND-COLOR: #b1d210; COLOR: #ffffff
+}
+#datePicker .date A:hover {
+	BORDER-BOTTOM: #b1d210 1px solid; BORDER-LEFT: #b1d210 1px solid; BACKGROUND-COLOR: #b1d210; COLOR: #024847; BORDER-TOP: #b1d210 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #b1d210 1px solid
+}
+#datePicker .out A:hover {
+	BORDER-BOTTOM: #b1d210 1px solid; BORDER-LEFT: #b1d210 1px solid; BACKGROUND-COLOR: #b1d210; COLOR: #024847; BORDER-TOP: #b1d210 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #b1d210 1px solid
+}
+#datePicker .today A:hover {
+	BORDER-BOTTOM: #b1d210 1px solid; BORDER-LEFT: #b1d210 1px solid; BACKGROUND-COLOR: #b1d210; COLOR: #024847; BORDER-TOP: #b1d210 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #b1d210 1px solid
+}
+#timePicker .hour A:hover {
+	BORDER-BOTTOM: #b1d210 1px solid; BORDER-LEFT: #b1d210 1px solid; BACKGROUND-COLOR: #b1d210; COLOR: #024847; BORDER-TOP: #b1d210 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #b1d210 1px solid
+}
+#timePicker .minute A:hover {
+	BORDER-BOTTOM: #b1d210 1px solid; BORDER-LEFT: #b1d210 1px solid; BACKGROUND-COLOR: #b1d210; COLOR: #024847; BORDER-TOP: #b1d210 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #b1d210 1px solid
+}

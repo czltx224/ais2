@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report3" language="groovy" pageWidth="683" pageHeight="395" columnWidth="683" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="xPath">
+		<![CDATA[/billLadings/printBeans/billLading]]>
+	</queryString>
+	<field name="payDepartName" class="java.lang.String">
+		<fieldDescription><![CDATA[payDepartName]]></fieldDescription>
+	</field>
+	<field name="incomeDepartName" class="java.lang.String">
+		<fieldDescription><![CDATA[incomeDepartName]]></fieldDescription>
+	</field>
+	<field name="creataRemark" class="java.lang.String">
+		<fieldDescription><![CDATA[creataRemark]]></fieldDescription>
+	</field>
+	<field name="payAccountNo" class="java.lang.String">
+		<fieldDescription><![CDATA[payAccountNo]]></fieldDescription>
+	</field>
+	<field name="incomeAccountNo" class="java.lang.String">
+		<fieldDescription><![CDATA[incomeAccountNo]]></fieldDescription>
+	</field>
+	<field name="amount" class="java.lang.String">
+		<fieldDescription><![CDATA[amount]]></fieldDescription>
+	</field>
+	<field name="printAccountNo" class="java.lang.String">
+		<fieldDescription><![CDATA[printAccountNo]]></fieldDescription>
+	</field>
+	<field name="maxAmount" class="java.lang.String">
+		<fieldDescription><![CDATA[maxAmount]]></fieldDescription>
+	</field>
+	<field name="printNum" class="java.lang.String">
+		<fieldDescription><![CDATA[printNum]]></fieldDescription>
+	</field>
+	<field name="printId" class="java.lang.String">
+		<fieldDescription><![CDATA[printId]]></fieldDescription>
+	</field>
+	<field name="payData" class="java.lang.String">
+		<fieldDescription><![CDATA[payData]]></fieldDescription>
+	</field>
+	<field name="cashStatus" class="java.lang.String">
+		<fieldDescription><![CDATA[cashStatus]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="384" splitType="Stretch">
+			<line>
+				<reportElement x="25" y="58" width="577" height="1"/>
+			</line>
+			<line>
+				<reportElement x="25" y="101" width="577" height="1"/>
+			</line>
+			<line>
+				<reportElement x="25" y="187" width="577" height="1"/>
+			</line>
+			<line>
+				<reportElement x="25" y="58" width="1" height="256"/>
+			</line>
+			<line>
+				<reportElement x="602" y="58" width="1" height="254"/>
+			</line>
+			<line>
+				<reportElement x="26" y="144" width="576" height="1"/>
+			</line>
+			<line>
+				<reportElement x="26" y="231" width="576" height="1"/>
+			</line>
+			<line>
+				<reportElement x="120" y="59" width="1" height="253"/>
+			</line>
+			<staticText>
+				<reportElement x="245" y="14" width="142" height="34"/>
+				<textElement textAlignment="Center">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[资金申请单]]></text>
+			</staticText>
+			<line>
+				<reportElement x="26" y="313" width="576" height="1"/>
+			</line>
+			<line>
+				<reportElement x="25" y="273" width="577" height="1"/>
+			</line>
+			<line>
+				<reportElement x="315" y="59" width="1" height="42"/>
+			</line>
+			<line>
+				<reportElement x="410" y="59" width="1" height="42"/>
+			</line>
+			<line>
+				<reportElement x="315" y="188" width="1" height="42"/>
+			</line>
+			<line>
+				<reportElement x="410" y="188" width="1" height="42"/>
+			</line>
+			<line>
+				<reportElement x="315" y="274" width="1" height="38"/>
+			</line>
+			<line>
+				<reportElement x="409" y="274" width="1" height="39"/>
+			</line>
+			<staticText>
+				<reportElement x="38" y="59" width="82" height="42"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="15" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[申请部门：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="38" y="102" width="82" height="42"/>
+				<textElement verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[摘要：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="38" y="145" width="82" height="42"/>
+				<textElement verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[拨付方式：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="38" y="188" width="82" height="42"/>
+				<textElement verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[申请账号：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="38" y="231" width="82" height="42"/>
+				<textElement verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[金额：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="38" y="272" width="82" height="42"/>
+				<textElement verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[申请日期：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="328" y="274" width="82" height="42"/>
+				<textElement verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[拨付日期：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="328" y="188" width="82" height="42"/>
+				<textElement verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[拨付账号：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="59" width="82" height="42"/>
+				<textElement verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[拨付部门：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="231" width="62" height="41"/>
+				<textElement verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[（小写）]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="315" y="231" width="89" height="41"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[（大写）：]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="136" y="160" width="13" height="13"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="182" y="241" width="10" height="21"/>
+				<textElement>
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[¥
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="153" y="145" width="110" height="42"/>
+				<textElement verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[现金]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="204" y="161" width="13" height="13"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="222" y="145" width="100" height="41"/>
+				<textElement verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[汇款]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="26" y="314" width="386" height="20"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[（备注：现金:上门交现、现金存入大区卡、现金存本部门收入卡转大区）]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="334" width="96" height="32"/>
+				<textElement verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[申请人签名：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="329" y="334" width="94" height="32"/>
+				<textElement verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[拨付人签名：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="203" y="145" width="13" height="42">
+					<printWhenExpression><![CDATA[$F{cashStatus}.equals("2")]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[√]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="135" y="144" width="13" height="42">
+					<printWhenExpression><![CDATA[$F{cashStatus}.equals("1")]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[√]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="136" y="59" width="179" height="42"/>
+				<textElement verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{payDepartName}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="430" y="59" width="172" height="42"/>
+				<textElement verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{incomeDepartName}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="136" y="102" width="466" height="42"/>
+				<textElement verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{creataRemark}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="231" width="192" height="41"/>
+				<textElement verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{maxAmount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="204" y="230" width="112" height="44"/>
+				<textElement verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{amount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="136" y="188" width="179" height="41"/>
+				<textElement verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{payAccountNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="430" y="188" width="172" height="42"/>
+				<textElement verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{incomeAccountNo}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="136" y="274" width="179" height="38"/>
+				<textElement verticalAlignment="Middle">
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{payData}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="430" y="274" width="172" height="38"/>
+				<textElement verticalAlignment="Middle">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[        年     月      日]]></text>
+			</staticText>
+			<line>
+				<reportElement x="425" y="359" width="100" height="1"/>
+			</line>
+			<line>
+				<reportElement x="139" y="358" width="100" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="464" y="37" width="20" height="21"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[NO.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="484" y="37" width="100" height="21"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{printAccountNo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

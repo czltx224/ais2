@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+.x-grid-back-red {  
+  background: red; 
+}
+.x-grid-back-yellow {  
+  background: yellow; 
+}
+.x-grid-back-green {  
+  background: green; 
+}
+
+.x-grid-back-blue{
+ background: blue; 
+}

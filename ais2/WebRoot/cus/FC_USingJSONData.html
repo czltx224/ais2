@@ -1,0 +1,54 @@
+<HTML>
+<HEAD>
+<script type="text/javascript" src="FusionCharts.js"></script>
+</head>
+<body>
+    <div id="chart1div">FusionCharts</div>
+    <script type="text/javascript" language="javascript">
+            var chart={
+                    animation:"1",
+                    caption:"JSON Data",
+                    
+					categories:{
+                        category:[
+                            {label:"FOOOO"},
+                            {label:"Booooooo"}
+                        ]
+                    },
+                    
+					dataset:[{            
+                        seriesName:"Product 1",
+                        set:[
+                            { value:"11112"},
+                            {value:"12224"}
+                          ]
+						},
+                         
+                        {            
+                        set:[
+                            { value:"12311"},
+                            {value:"14123"}
+                        ],
+                        seriesName:"Product 2"}
+                    ],
+                    
+					trendlines:{
+                        line:[
+                            {startValue:6,color:"FFFF00"},
+                            {startValue:10,color:"ff0000",endvalue:"15",isTrendZone:true}
+                        ]
+                    },
+                    
+					subCaption:"Using FusionCharts.js"
+                    
+            };
+       
+       var chart1 = new FusionCharts("${pageContext.request.contextPath}/chars/fcf/MSColumn3D.swf", "ChId1", "450", "350", "0", "0");
+       
+       chart1.setDataJSON(chart);
+      
+       chart1.render("chart1div");
+
+    </script>
+</body>
+</html>

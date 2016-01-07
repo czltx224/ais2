@@ -1,0 +1,40 @@
+<html>
+ <head>
+ <SCRIPT LANGUAGE="JavaScript"> 
+          var javawsInstalled = 0; 
+          isIE = "false"; 
+
+          if (navigator.mimeTypes && navigator.mimeTypes.length) { 
+             x = navigator.mimeTypes['application/x-java-jnlp-file']; 
+             if (x) javawsInstalled = 1; 
+          } else { 
+             isIE = "true"; 
+          } 
+          function insertLink(url, name) { 
+          if (javawsInstalled || navigator.family == 'gecko') { 
+                document.write("<a href=" + url + ">"  + name + "</a>"); 
+             } else { 
+               document.write("<a href=http://dlres.java.sun.com/PluginBrowserCheck?pass=http://www.cnjbb.org/swing/index.html&fail=http://java.sun.com/cgi-bin/javawebstart-platform.sh>点这里下在并且安装WebStart</a> ");
+             } 
+          } 
+      </SCRIPT> 
+      <SCRIPT LANGUAGE="VBScript"> 
+          on error resume next 
+          If isIE = "true" Then 
+            If Not(IsObject(CreateObject("JavaWebStart.IsInstalled"))) Then 
+                  javawsInstalled = 0 
+            Else 
+                  javawsInstalled = 1 
+            End If 
+          End If 
+      </SCRIPT> 
+  </head>
+  <body >
+  <h1>欢迎使用新邦物流配送管理系统，如果您的机器上没有安装webstart请点下面的连接下在并安装！</h1>
+    <SCRIPT LANGUAGE="Javascript"> 
+        <!-- 
+        insertLink("http://192.168.8.51:9999/ais2/webstart/index.jnlp","CnJBB Swing DownLoad"); 
+        // --> 
+    </SCRIPT> 
+  </body>
+  

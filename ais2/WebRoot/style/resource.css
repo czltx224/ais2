@@ -1,0 +1,130 @@
+.user {
+    background-image:url(../images/administrator1_16x16.gif) !important; }
+.userAdd {
+    background-image:url(../images/administrator1_add_16x16.gif) !important; }
+.userDelete {
+    background-image:url(../images/administrator1_delete_16x16.gif) !important; }
+.userEdit {
+    background-image:url(../images/administrator1_edit_16x16.gif) !important; }
+.refresh {
+    background-image:url(../images/refresh_16x16.gif) !important; }
+
+.group {
+    background-image:url(../images/database_field_16x16.gif) !important; }
+.groupAdd {
+    background-image:url(../images/database_field_add_16x16.gif) !important; }
+.groupEdit {
+    background-image:url(../images/database_field_edit_16x16.gif) !important; }
+.groupSave {
+    background-image:url(../images/database_field_save_16x16.gif) !important; }
+.groupDetail {
+	background-image:url(../images/database_field_detail_16x16.gif) !important; }
+.groupRecommend {
+	background-image:url(../images/database_field_recommend_16x16.gif) !important; }
+.groupUnRecommend {
+	background-image:url(../images/database_field_unrecommend_16x16.gif) !important; }
+.groupPass {
+	background-image:url(../images/database_field_pass_16x16.gif) !important; }
+.groupNotPass {
+	background-image:url(../images/database_field_notpass_16x16.gif) !important; }
+.groupOpen {
+	background-image:url(../images/database_field_open_16x16.gif) !important; }
+.groupClose {
+	background-image:url(../images/database_field_close_16x16.gif) !important; }
+.groupDelete {
+    background-image:url(../images/database_field_delete_16x16.gif) !important; }
+.groupMusic {
+    background-image:url(../images/database_field_music_16x16.gif) !important; }
+.save {
+    background-image:url(../images/save.gif) !important;
+}
+.tabAdd {
+    background-image:url(../images/table_add_16x16.gif) !important; }
+.back {
+    background-image:url(../images/forward1.gif) !important;
+}
+.btnLeft {
+    background-image:url(../images/forward.gif) !important;
+}
+.btnSearch{
+    background-image:url(../images/search-16x16.gif) !important;    
+}
+.roleSet{
+    background-image:url("../images/unordered_list_16x16.gif")!important; 
+}
+.roleView{
+    background-image:url("../images/profile-16x16.gif")!important;
+}
+.imageCusor{
+    cursor:pointer
+}
+.role_forward{
+    background-image:url("../images/forward.gif")!important;
+}.role_backward{
+    background-image:url("../images/backward.gif")!important;
+}
+.sort_up{
+    background-image:url("../images/up-16x16.gif")!important;
+}
+.sort_down{
+    background-image:url("../images/down_16x16.gif")!important;
+}
+.chart {
+    background-image:url(../images/charts/chart.gif) !important; }
+.table {
+    background-image:url(../images/table_16x16.gif) !important; }
+    
+  .index_help {
+    background-image:url(../imags/help.png) !important; }  
+ .index_char {
+    background-image:url(../imags/CHAT.png) !important; }  
+  .index_out {
+    background-image:url(../imags/Delete.png) !important; }    
+    
+  .top_weather{
+    background-image:url(../imags/top_weather.png) !important; }   
+    
+    .top_calendar{
+     	background-image:url(../imags/top_calendar.png) !important; 
+    } 
+     .top_user{
+     	background-image:url(../imags/top_user.png) !important; 
+    } 
+    .top_close{
+     	background-image:url(../imags/top_close.png) !important; 
+    }   
+    .top_index{
+   		 background-image:url(../imags/top_index.png) !important; 
+    }
+    
+<!--  sw Í¼±êÅäÖÃ  -->        
+.gjQuery {
+    background-image:url(../images/gjQuery.png)!important; }
+.computerUser {
+    background-image:url(../images/computer2_16x16.gif)!important;}
+.outExcel {
+    background-image:url(../images/outExcel.gif)!important; }
+.phone {
+    background-image:url(../images/Phone.png)!important; }
+.fieldEdit {
+    background-image:url(../images/database_field_edit_16x16.bak.gif)!important; }
+.problem {
+    background-image:url(../images/untitled.bmp)!important; }    
+
+    
+<!--  czl Í¼±êÅäÖÃ  -->    
+
+.revoked {
+    background-image:url(../images/undo1_16x16.gif) !important; }
+.printBtn {
+    background-image:url(../images/printBtn2.bmp) !important; }  
+.searchDetail {
+    background-image:url(../images/database_field_16x16.bak.gif) !important; }    
+
+<!--liuh Í¼±êÅäÖÃ -->
+.flowControl{
+	background-image:url(../images/database_field_pass_16x16.gif) !important; }
+}
+.showChart{
+	background-image:url(../images/showChart.png) !important; }
+}

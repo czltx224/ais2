@@ -1,0 +1,247 @@
+BODY {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+DIV {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+UL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+LI {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+P {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+IMG {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+
+TABLE {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+TD {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+TR {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+
+UL {
+	LIST-STYLE-TYPE: none
+}
+LI {
+	LIST-STYLE-TYPE: none
+}
+OL {
+	LIST-STYLE-TYPE: none
+}
+IMG {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+
+TABLE {
+	BORDER-COLLAPSE: collapse; EMPTY-CELLS: show
+}
+TD {
+	BORDER-COLLAPSE: collapse; EMPTY-CELLS: show
+}
+TH {
+	BORDER-COLLAPSE: collapse; EMPTY-CELLS: show
+}
+TH {
+	VERTICAL-ALIGN: top
+}
+TD {
+	VERTICAL-ALIGN: top
+}
+TH {
+	TEXT-ALIGN: left
+}
+TABLE {
+	WIDTH: 100%
+}
+.fLeft {
+	FLOAT: left
+}
+fLeftDiv DIV {
+	FLOAT: left
+}
+.fLeftAll * {
+	FLOAT: left
+}
+.fRight {
+	FLOAT: right
+}
+.fClear {
+	LINE-HEIGHT: 0; MARGIN-TOP: -1px; WIDTH: 1px; HEIGHT: 0px; VISIBILITY: hidden; CLEAR: both; FONT-SIZE: 1px
+}
+.center {
+	TEXT-ALIGN: center
+}
+.centerAll * {
+	TEXT-ALIGN: center
+}
+.left {
+	TEXT-ALIGN: left !important
+}
+.lMargin {
+	MARGIN: 0px 5px
+}
+.relative {
+	POSITION: relative
+}
+.scroll {
+	OVERFLOW: auto
+}
+.hidden {
+	DISPLAY: none
+}
+.primLeft {
+	FLOAT: left
+}
+.primRight {
+	MARGIN: 5px 5px 0px 0px; WIDTH: 190px; FLOAT: right
+}
+.skin {
+	POSITION: absolute; TOP: 1px; LEFT: 300px
+}
+.skin LI {
+	MARGIN: 5px; WIDTH: 14px; FLOAT: left; HEIGHT: 11px; CURSOR: pointer
+}
+.skinRed {
+	BACKGROUND: url(/vsolution/upFiles/changeSkinRed.gif) no-repeat
+}
+.skinRed_B {
+	BACKGROUND: url(/vsolution/upFiles/changeSkinRed_B.gif) no-repeat
+}
+.skinBlue {
+	BACKGROUND: url(/vsolution/upFiles/changeSkinBlue.gif) no-repeat
+}
+.skinBlue_B {
+	BACKGROUND: url(/vsolution/upFiles/changeSkinBlue_B.gif) no-repeat
+}
+.skinGreen {
+	BACKGROUND: url(/vsolution/upFiles/changeSkinGreen.gif) no-repeat
+}
+.skinGreen_B {
+	BACKGROUND: url(/vsolution/upFiles/changeSkinGreen_B.gif) no-repeat
+}
+.skinOrange {
+	BACKGROUND: url(/vsolution/upFiles/changeSkinOrange.gif) no-repeat
+}
+.skinOrange_B {
+	BACKGROUND: url(/vsolution/upFiles/changeSkinOrange_B.gif) no-repeat
+}
+.gray_33 {
+	COLOR: #333333
+}
+.gray_33 A {
+	COLOR: #333333; TEXT-DECORATION: none
+}
+.gray_33 A:hover {
+	COLOR: #333333; TEXT-DECORATION: underline
+}
+.red {
+	COLOR: #ef0002
+}
+.red A {
+	COLOR: #ef0002; TEXT-DECORATION: none
+}
+.red A:hover {
+	COLOR: #ef0002; TEXT-DECORATION: underline
+}
+.black_20 {
+	FONT-STYLE: oblique; COLOR: #000000; FONT-WEIGHT: bold
+}
+.bold {
+	FONT-WEIGHT: bold
+}
+.lineHe_01 {
+	LINE-HEIGHT: 25px
+}
+.noBorder {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+.noAllBorder {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+.noAllBorder TD {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+.noAllBorder TABLE {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+#mainDIV {
+	WIDTH: 100%
+}
+#mainDIV #mainIframe {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; WIDTH: 100%; HEIGHT: 100%; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+/*
+BUTTON.toolbarBtn {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; WIDTH: 16px; BACKGROUND: url(/vimgs/rtx.gif) no-repeat; HEIGHT: 20px; BORDER-TOP: 0px; CURSOR: pointer; BORDER-RIGHT: 0px
+}*/
+BUTTON.RTX {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; WIDTH: 16px; BACKGROUND: url(/vimgs/rtx.gif) no-repeat; HEIGHT: 16px; BORDER-TOP: 0px; CURSOR: pointer; BORDER-RIGHT: 0px
+}
+BUTTON.Browser {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; WIDTH: 16px; BACKGROUND: url(/vimgs/browser.gif) no-repeat; HEIGHT: 16px; BORDER-TOP: 0px; CURSOR: pointer; BORDER-RIGHT: 0px
+}
+BUTTON.newBrowser {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; WIDTH: 16px; BACKGROUND: url(/vimgs/plus.gif) no-repeat; HEIGHT: 16px; BORDER-TOP: 0px; CURSOR: pointer; BORDER-RIGHT: 0px
+}
+BUTTON.Calendar {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; WIDTH: 16px; BACKGROUND: url(/vimgs/calendar.gif) no-repeat; HEIGHT: 16px; BORDER-TOP: 0px; CURSOR: pointer; BORDER-RIGHT: 0px
+}
+BUTTON.timer {
+	BACKGROUND-IMAGE: url(/vimgs/timer.gif); BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; WIDTH: 18px; HEIGHT: 18px; BORDER-TOP: medium none; CURSOR: pointer; BORDER-RIGHT: medium none
+}
+#demo {
+	POSITION: absolute; TEXT-ALIGN: center; LINE-HEIGHT: 19px; WIDTH: 100px; TOP: 5px; LEFT: 450px
+}
+#portalTable .mod_B_1 {
+	CLEAR: both
+}
+#portalTable .mod_H_1 {
+	CLEAR: both
+}
+#portalTable .mod_H_1 .itemHeaderInner {
+	BACKGROUND-IMAGE: url(/vsolution/layout_6_5/orange/images/leftCaptBack.gif); PADDING-BOTTOM: 2px; LINE-HEIGHT: 24px; PADDING-LEFT: 2px; PADDING-RIGHT: 0px; CLEAR: both; FONT-WEIGHT: bold; PADDING-TOP: 2px
+}
+#portalTable .mod_H_1 .itemHeaderInner SPAN.more1 {
+	FLOAT: right
+}
+#portalTable .mod_H_1 .itemHeaderInner SPAN.mpic {
+	FLOAT: right
+}
+#portalTable .mod_H_1 SPAN.more1 {
+	DISPLAY: none
+}
+#portalTable .mod_B_1 LI {
+	LINE-HEIGHT: 20px; MARGIN: 5px 0px
+}
+#portalTable .mod_B_1 LI A {
+	PADDING-LEFT: 16px; BACKGROUND: url(/vimgs/portal/dot_all.gif) no-repeat left -47px
+}
+#pageDiv {
+	BORDER-BOTTOM: #cccccc 3px solid; POSITION: absolute; BORDER-LEFT: #cccccc 3px solid; PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 10px; WIDTH: 700px; PADDING-RIGHT: 10px; DISPLAY: none; BORDER-TOP: #cccccc 3px solid; TOP: 200px; BORDER-RIGHT: #cccccc 3px solid; PADDING-TOP: 10px; LEFT: 100px
+}
+#wbstaskDIV {
+	WIDTH: 270px; FLOAT: left
+}
+#wbstaskDIV #wbsFrame {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; WIDTH: 100%; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+#wbsDIV {
+	FLOAT: right
+}
+#wbsDIV #taskFrame {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; WIDTH: 98%; HEIGHT: 100%; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+.completed A {
+	COLOR: #666666; TEXT-DECORATION: line-through
+}
+.completed A:hover {
+	TEXT-DECORATION: underline
+}

@@ -1,0 +1,29 @@
+
+#check_form_title{
+	margin:0px;
+	width:100%;
+}
+
+#check_form{
+	margin:0px;
+	width:100%;
+	background:url("../images/checkform_bg.gif") repeat-x;
+    background-position:bottom;
+	border:1px solid #c1c1c1;
+}
+
+#check_table_title{
+	margin:0px;
+	width:100%;
+}
+
+#check_table{
+	margin:0px;
+	width:100%;
+}
+
+#gr{
+  margin:0px;
+  width:100%;
+  border:1px solid #c1c1c1;
+}

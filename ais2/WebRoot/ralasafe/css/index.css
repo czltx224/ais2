@@ -1,0 +1,31 @@
+body{
+  background:#e5e5e5;
+}
+
+
+#index{
+	margin:0px;
+	width:1024;
+	height:768;
+	background:url("../images/index_back.gif") no-repeat;
+	text-align:left;
+}
+
+#menu{
+    margin:0 0 0 30;
+	width:500;
+	
+}
+
+.menu_btn{
+    cursor:hand;
+	color:#fff;
+	font-weight:bolder;
+}
+
+.subdiv{
+   margin:0;
+   list-style-type : none;
+   width:250;
+  }
+

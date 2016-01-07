@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="tm_transfer_report" pageWidth="683" pageHeight="395" columnWidth="671" leftMargin="2" rightMargin="10" topMargin="1" bottomMargin="1">
+	<property name="ireport.scriptlethandling" value="0"/>
+	<property name="ireport.encoding" value="UTF-8"/>
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<import value="net.sf.jasperreports.engine.*"/>
+	<import value="java.util.*"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<subDataset name="SubDataset1"/>
+	<parameter name="printTime" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="imageURL" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="username" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="driverName" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="signBillNo" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="deptId" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="carNo" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="dno" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="mode" class="java.lang.String" isForPrompting="false"/>
+	<queryString language="xPath">
+		<![CDATA[/billLadings/printBeans/billLading]]>
+	</queryString>
+	<field name="overmemoNo" class="java.lang.String">
+		<fieldDescription><![CDATA[overmemoNo]]></fieldDescription>
+	</field>
+	<field name="signRouteNo" class="java.lang.String">
+		<fieldDescription><![CDATA[signRouteNo]]></fieldDescription>
+	</field>
+	<field name="carCode" class="java.lang.String">
+		<fieldDescription><![CDATA[carCode]]></fieldDescription>
+	</field>
+	<field name="useCarDepart" class="java.lang.String">
+		<fieldDescription><![CDATA[useCarDepart]]></fieldDescription>
+	</field>
+	<field name="useCarType" class="java.lang.String">
+		<fieldDescription><![CDATA[useCarType]]></fieldDescription>
+	</field>
+	<field name="useCarResult" class="java.lang.String">
+		<fieldDescription><![CDATA[useCarResult]]></fieldDescription>
+	</field>
+	<field name="printDepart" class="java.lang.String">
+		<fieldDescription><![CDATA[printDepart]]></fieldDescription>
+	</field>
+	<field name="useCarDate" class="java.lang.String">
+		<fieldDescription><![CDATA[useCarDate]]></fieldDescription>
+	</field>
+	<field name="sendGoodsMan" class="java.lang.String">
+		<fieldDescription><![CDATA[sendGoodsMan]]></fieldDescription>
+	</field>
+	<field name="carManTel" class="java.lang.String">
+		<fieldDescription><![CDATA[carManTel]]></fieldDescription>
+	</field>
+	<field name="printName" class="java.lang.String">
+		<fieldDescription><![CDATA[printName]]></fieldDescription>
+	</field>
+	<field name="printNum" class="java.lang.String">
+		<fieldDescription><![CDATA[printNum]]></fieldDescription>
+	</field>
+	<field name="printTime" class="java.lang.String">
+		<fieldDescription><![CDATA[printTime]]></fieldDescription>
+	</field>
+	<field name="printId" class="java.lang.String">
+		<fieldDescription><![CDATA[printId]]></fieldDescription>
+	</field>
+	<field name="sourceNo" class="java.lang.String">
+		<fieldDescription><![CDATA[sourceNo]]></fieldDescription>
+	</field>
+	<field name="imgBaseUrl" class="java.lang.String">
+		<fieldDescription><![CDATA[/billLadings/imgBaseUrl]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="77" splitType="Stretch">
+			<staticText>
+				<reportElement key="staticText-1" x="134" y="5" width="319" height="31"/>
+				<textElement textAlignment="Center">
+					<font fontName="楷体_GB2312" size="24" pdfFontName="simkai.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[配送事业部临时外租车签单]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-40" x="264" y="51" width="45" height="18"/>
+				<textElement textAlignment="Left">
+					<font size="12" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[签单号:]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement key="textField" x="312" y="51" width="122" height="18"/>
+				<textElement textAlignment="Left">
+					<font size="12" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{signRouteNo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement key="staticText-79" x="132" y="51" width="55" height="18"/>
+				<textElement textAlignment="Left">
+					<font size="11" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[交接单号:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-80" x="444" y="51" width="153" height="18"/>
+				<textElement textAlignment="Left">
+					<font size="11" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[报销日期: 20     年     月     日]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-83" x="10" y="51" width="45" height="18"/>
+				<textElement textAlignment="Left">
+					<font size="11" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[报销人:]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="53" y="51" width="74" height="18"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{sendGoodsMan}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="185" y="51" width="74" height="18"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{overmemoNo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="178" splitType="Stretch">
+			<staticText>
+				<reportElement key="staticText-2" x="14" y="5" width="70" height="17"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[用车部门]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-60" x="14" y="30" width="70" height="17"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[起止时间]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-61" x="14" y="54" width="70" height="17"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[车牌号]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-62" x="179" y="30" width="28" height="17"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[至]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-63" x="218" y="54" width="70" height="17"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[车主电话]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-64" x="312" y="30" width="73" height="17"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[起止地点]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-65" x="403" y="54" width="70" height="17"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[车主签名]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-66" x="14" y="106" width="70" height="17"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[计算公式]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-72" x="14" y="79" width="70" height="17"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[用车金额]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-73" x="20" y="159" width="42" height="17"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[审核：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-74" x="134" y="159" width="58" height="17"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[部门经理：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-75" x="264" y="159" width="42" height="17"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[出纳：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-58" x="312" y="5" width="73" height="17"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[用车日期]]></text>
+			</staticText>
+			<line>
+				<reportElement key="line-12" x="89" y="1" width="1" height="75"/>
+			</line>
+			<line>
+				<reportElement key="line-17" x="394" y="0" width="1" height="50"/>
+			</line>
+			<line>
+				<reportElement key="line-22" positionType="Float" x="7" y="0" width="591" height="1"/>
+			</line>
+			<line>
+				<reportElement key="line-23" x="598" y="-1" width="1" height="179"/>
+			</line>
+			<line>
+				<reportElement key="line-24" x="7" y="0" width="1" height="178"/>
+			</line>
+			<line>
+				<reportElement key="line-34" x="299" y="0" width="1" height="50"/>
+			</line>
+			<line>
+				<reportElement key="line-35" positionType="Float" x="7" y="25" width="591" height="1"/>
+			</line>
+			<line>
+				<reportElement key="line-36" positionType="Float" x="7" y="75" width="591" height="1"/>
+			</line>
+			<line>
+				<reportElement key="line-37" positionType="Float" x="7" y="50" width="591" height="1"/>
+			</line>
+			<line>
+				<reportElement key="line-38" positionType="Float" x="7" y="129" width="591" height="1"/>
+			</line>
+			<line>
+				<reportElement key="line-41" positionType="Float" x="7" y="100" width="591" height="1"/>
+			</line>
+			<line>
+				<reportElement key="line-51" x="299" y="51" width="1" height="25"/>
+			</line>
+			<line>
+				<reportElement key="line-52" x="394" y="51" width="1" height="25"/>
+			</line>
+			<staticText>
+				<reportElement key="staticText-85" x="113" y="80" width="477" height="17"/>
+				<textElement textAlignment="Left">
+					<font size="11" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[          万          仟          佰          拾          元          角                    小写：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-86" x="483" y="30" width="31" height="17"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[至]]></text>
+			</staticText>
+			<line>
+				<reportElement key="line-53" x="207" y="50" width="1" height="25"/>
+			</line>
+			<line>
+				<reportElement key="line-54" x="489" y="50" width="1" height="25"/>
+			</line>
+			<line>
+				<reportElement key="line-55" x="89" y="76" width="1" height="80"/>
+			</line>
+			<staticText>
+				<reportElement key="staticText-89" x="376" y="159" width="42" height="17"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[会计：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-90" x="476" y="159" width="45" height="17"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[经办人：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-91" x="452" y="4" width="82" height="17"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[年      月      日]]></text>
+			</staticText>
+			<line>
+				<reportElement key="line-38" positionType="Float" x="7" y="156" width="591" height="1"/>
+			</line>
+			<staticText>
+				<reportElement key="staticText-66" x="14" y="134" width="70" height="17"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[用车事由]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="90" y="5" width="198" height="18"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{useCarDepart}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="94" y="54" width="103" height="18"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{carCode}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="300" y="54" width="94" height="18"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{carManTel}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="57" splitType="Stretch">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement key="textField-3" x="56" y="9" width="123" height="15"/>
+				<textElement>
+					<font size="10" isUnderline="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{printDepart}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement key="staticText-77" x="6" y="9" width="51" height="15"/>
+				<textElement textAlignment="Left">
+					<font size="10" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[打印部门:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-30" x="257" y="9" width="44" height="15"/>
+				<textElement>
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[打 印 人:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-31" x="469" y="9" width="47" height="15"/>
+				<textElement>
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[打印日期:]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement key="textField" x="520" y="9" width="80" height="15"/>
+				<textElement>
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{printTime}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement key="textField" x="301" y="9" width="70" height="15"/>
+				<textElement>
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{printName}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement key="line-42" positionType="Float" x="7" y="-1" width="591" height="1"/>
+			</line>
+		</band>
+	</summary>
+</jasperReport>

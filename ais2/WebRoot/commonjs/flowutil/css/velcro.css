@@ -1,0 +1,196 @@
+@import url( /global.css );
+TD.fieldname {
+	BORDER-BOTTOM: #e5eff8 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #e5eff8 1px solid; PADDING-BOTTOM: 0px; LINE-HEIGHT: 23px; BACKGROUND-COLOR: #f7f6fc; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; BORDER-TOP: #e5eff8 1px solid; BORDER-RIGHT: #e5eff8 1px solid; PADDING-TOP: 0px
+}
+TD.fieldvalue {
+	BORDER-BOTTOM: #e5eff8 1px solid; BORDER-LEFT: #e5eff8 1px solid; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #fdfdfd; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; VERTICAL-ALIGN: middle; BORDER-TOP: #e5eff8 1px solid; BORDER-RIGHT: #e5eff8 1px solid; PADDING-TOP: 0px
+}
+TABLE.borderstyle {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BACKGROUND-COLOR: #c5c8d0; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+TABLE.borderstyle TD {
+	BACKGROUND-COLOR: #ffffff
+}
+TABLE.layouttable {
+	BORDER-BOTTOM: #cbd7ed 1px solid; BORDER-LEFT: #cbd7ed 1px solid; MARGIN-TOP: 10px; WIDTH: 100%; BORDER-TOP: #cbd7ed 1px solid; BORDER-RIGHT: #cbd7ed 1px solid
+}
+TABLE.detailtable {
+	BORDER-BOTTOM: #cbd7ed 1px solid; BORDER-LEFT: #cbd7ed 1px solid; MARGIN-TOP: 10px; WIDTH: 100%; BORDER-TOP: #cbd7ed 1px solid; BORDER-RIGHT: #cbd7ed 1px solid
+}
+TABLE.layouttable CAPTION {
+	BORDER-BOTTOM: #cdcdcd 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #cdcdcd 1px solid; PADDING-BOTTOM: 4px; LINE-HEIGHT: 30px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; BORDER-TOP: #cdcdcd 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #cdcdcd 1px solid; PADDING-TOP: 4px
+}
+TABLE.detailtable CAPTION {
+	BORDER-BOTTOM: #cdcdcd 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #cdcdcd 1px solid; PADDING-BOTTOM: 4px; LINE-HEIGHT: 30px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; BORDER-TOP: #cdcdcd 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #cdcdcd 1px solid; PADDING-TOP: 4px
+}
+TABLE.layouttable TD {
+	BORDER-BOTTOM: #e5eff8 1px solid; BORDER-LEFT: #e5eff8 1px solid; LINE-HEIGHT: 25px; VERTICAL-ALIGN: middle; BORDER-TOP: #e5eff8 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #e5eff8 1px solid
+}
+TABLE.layouttable TH {
+	BORDER-BOTTOM: #e5eff8 1px solid; BORDER-LEFT: #e5eff8 1px solid; LINE-HEIGHT: 25px; VERTICAL-ALIGN: middle; BORDER-TOP: #e5eff8 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #e5eff8 1px solid
+}
+TABLE.detailtable TH {
+	BORDER-BOTTOM: #e5eff8 1px solid; BORDER-LEFT: #e5eff8 1px solid; LINE-HEIGHT: 25px; VERTICAL-ALIGN: middle; BORDER-TOP: #e5eff8 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #e5eff8 1px solid
+}
+.detailtable TD {
+	BORDER-BOTTOM: #e5eff8 1px solid; BORDER-LEFT: #e5eff8 1px solid; LINE-HEIGHT: 25px; VERTICAL-ALIGN: middle; BORDER-TOP: #e5eff8 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #e5eff8 1px solid
+}
+TABLE.layouttable TH {
+	BACKGROUND-COLOR: #5276b2; PADDING-LEFT: 4px; COLOR: #fff; WORD-BREAK: keep-all
+}
+TABLE.detailtable TH {
+	BACKGROUND-COLOR: #5276b2; PADDING-LEFT: 4px; COLOR: #fff; WORD-BREAK: keep-all
+}
+#resultlistdiv {
+	BORDER-BOTTOM: #a5b8d7 1px solid; WIDTH: 100%; OVERFLOW: auto
+}
+#resultlistdiv TABLE {
+	MARGIN-TOP: -1px; BORDER-COLLAPSE: collapse
+}
+DIV.loadding {
+	Z-INDEX: 20; BORDER-BOTTOM: #5d86ca 1px solid; POSITION: absolute; TEXT-ALIGN: left; FILTER: Alpha(Opacity = 80); BORDER-LEFT: #5d86ca 1px solid; PADDING-BOTTOM: 5px; BACKGROUND-COLOR: #eeeeee; PADDING-LEFT: 5px; WIDTH: 200px; PADDING-RIGHT: 5px; HEIGHT: 30px; COLOR: #5b924e; BORDER-TOP: #5d86ca 1px solid; TOP: 45%; BORDER-RIGHT: #5d86ca 1px solid; PADDING-TOP: 5px; LEFT: 40%
+}
+.attachDiv {
+	Z-INDEX: 20; BORDER-BOTTOM: #333333 1px solid; POSITION: absolute; TEXT-ALIGN: left; FILTER: Alpha(Opacity = 95); BORDER-LEFT: #333333 1px solid; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #ffffe1; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: #333333 1px solid; BORDER-RIGHT: #333333 1px solid; PADDING-TOP: 0px
+}
+.attachDiv DIV {
+	POSITION: relative; TOP: 0px; LEFT: 1px
+}
+.attachDiv UL {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 3px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.downAttach {
+	BORDER-BOTTOM: #5d86ca 1px solid; BORDER-LEFT: #5d86ca 1px solid; PADDING-BOTTOM: 1px; LINE-HEIGHT: 11px; BACKGROUND-COLOR: #aebed9; PADDING-LEFT: 1px; PADDING-RIGHT: 1px; HEIGHT: 13px; COLOR: red; BORDER-TOP: #5d86ca 1px solid; BORDER-RIGHT: #5d86ca 1px solid; PADDING-TOP: 1px
+}
+#authorizeDiv {
+	WIDTH: 30%; HEIGHT: 400px; COLOR: #333399; OVERFLOW: auto
+}
+#authorizeDiv DIV DIV {
+	COLOR: #3333dd; MARGIN-LEFT: 15px
+}
+#authorizeDiv DIV DIV DIV {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #6666cc; MARGIN-LEFT: 35px; PADDING-TOP: 0px
+}
+#authorizeDiv INPUT {
+	MARGIN-LEFT: -5px
+}
+#authorizeDiv IMG {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; VERTICAL-ALIGN: middle; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+#authorizeSetDiv {
+	POSITION: absolute; WIDTH: 70%; HEIGHT: 400px; COLOR: #333399; OVERFLOW: auto; TOP: 50px; LEFT: 30%
+}
+#maskDiv {
+	Z-INDEX: 100; POSITION: absolute; FILTER: Alpha(Opacity = 80); BACKGROUND-COLOR: #ffffff; WIDTH: 100%; HEIGHT: 100%; TOP: 0px; LEFT: 0px; opacity: 0.6
+}
+#processDiv {
+	Z-INDEX: 2000; POSITION: absolute; BACKGROUND-COLOR: #ffffff; COLOR: #4e82c1
+}
+#processDiv #processBorder {
+	BORDER-BOTTOM: #4e82c1 1px solid; BORDER-LEFT: #4e82c1 1px solid; WIDTH: 400px; BACKGROUND: #fff; FLOAT: left; HEIGHT: 15px; BORDER-TOP: #4e82c1 1px solid; BORDER-RIGHT: #4e82c1 1px solid
+}
+#processDiv #processBar {
+	BACKGROUND-IMAGE: url(../img/processbar_bg.gif); MARGIN: 1px; WIDTH: 0px; HEIGHT: 15px
+}
+#processDiv #percent {
+	MARGIN: 0px 5px; COLOR: #cc0000
+}
+#fileUploadDIV {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: auto; PADDING-RIGHT: 0px; HEIGHT: auto; COLOR: #5276b2; PADDING-TOP: 0px
+}
+#fileUploadDIV A {
+	MARGIN: 0px 20px 0px 10px
+}
+#selectdiv {
+	Z-INDEX: 20; BORDER-BOTTOM: #5d86ca 0px solid; POSITION: absolute; TEXT-ALIGN: left; FILTER: Alpha(Opacity = 95); BORDER-LEFT: #5d86ca 0px solid; PADDING-BOTTOM: 1px; BACKGROUND-COLOR: #ffffe1; PADDING-LEFT: 1px; PADDING-RIGHT: 1px; BORDER-TOP: #5d86ca 0px solid; BORDER-RIGHT: #5d86ca 0px solid; PADDING-TOP: 1px
+}
+#selectdiv DIV {
+	PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; PADDING-TOP: 2px
+}
+#closeDiv {
+	BORDER-BOTTOM: 1px; BORDER-LEFT: 1px; WIDTH: 18px; HEIGHT: 18px; BORDER-TOP: 1px; CURSOR: crosshair; BORDER-RIGHT: 1px
+}
+#docviewlist {
+	LINE-HEIGHT: 22px; PADDING-LEFT: 2px
+}
+#docviewlist UL {
+	PADDING-BOTTOM: 0px; MARGIN: 3px 0px 0px 20px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+#docviewlist UL UL {
+	MARGIN-LEFT: 42px
+}
+#docviewlist LI {
+	WHITE-SPACE: nowrap; WORD-BREAK: keep-all
+}
+#docviewlist LI DIV {
+	MARGIN-LEFT: 119px
+}
+#docviewlist DIV A {
+	COLOR: #333333
+}
+#docviewlist DIV A:hover {
+	TEXT-DECORATION: underline
+}
+#docviewlist UL LI LABEL {
+	FONT-WEIGHT: bold
+}
+#docviewlist UL LI UL LI LABEL {
+	FONT-WEIGHT: normal
+}
+#docviewlist LABEL A {
+	TEXT-DECORATION: underline
+}
+#docviewlist A:visited {
+	COLOR: #800080
+}
+#searchQualification {
+	MARGIN-LEFT: 2px
+}
+#searchTable TD.fieldname {
+	PADDING-LEFT: 4px
+}
+#language {
+	Z-INDEX: 1000; POSITION: absolute; TOP: 2px; RIGHT: 5px
+}
+#language A {
+	COLOR: #5276b2
+}
+#loginLogo {
+	Z-INDEX: 100; POSITION: absolute; WIDTH: 182px; BACKGROUND: url(/img/login_logo.gif) no-repeat center center; HEIGHT: 99px; TOP: 50px; LEFT: 100px
+}
+#loginPage {
+	POSITION: absolute; WIDTH: 100%; BACKGROUND: url(/img/login_bg2.jpg) repeat-x 94px center; FLOAT: left; TOP: 150px
+}
+#loginPage #left {
+	POSITION: relative; WIDTH: 623px; BACKGROUND: url(/img/login_bg1.jpg) no-repeat left center; HEIGHT: 260px; LEFT: 0px
+}
+#loginPage #right {
+	
+}
+#loginMSG {
+	Z-INDEX: 10; BORDER-BOTTOM: #cccccc 1px solid; POSITION: absolute; BORDER-LEFT: #cccccc 1px solid; PADDING-BOTTOM: 2px; BACKGROUND-COLOR: #aa0000; PADDING-LEFT: 2px; WIDTH: 350px; PADDING-RIGHT: 2px; HEIGHT: 20px; COLOR: #ffffff; BORDER-TOP: #cccccc 1px solid; TOP: 130px; RIGHT: 0px; BORDER-RIGHT: #cccccc 1px solid; PADDING-TOP: 2px
+}
+#loginForm {
+	POSITION: absolute; WIDTH: 350px; HEIGHT: 160px; TOP: 210px; LEFT: 50%
+}
+#loginForm TABLE {
+	BORDER-BOTTOM: #93a2c3 1px solid; BORDER-LEFT: #93a2c3 1px solid; BACKGROUND-COLOR: #abbad7; WIDTH: 100%; HEIGHT: 100%; BORDER-TOP: #93a2c3 1px solid; BORDER-RIGHT: #93a2c3 1px solid
+}
+#loginForm #login_user {
+	BACKGROUND-IMAGE: url(../img/user.gif); POSITION: absolute; BACKGROUND-COLOR: #abbad7; WIDTH: 32px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 32px; TOP: 1px; LEFT: 1px
+}
+#loginForm .login {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 40px; PADDING-RIGHT: 0px; HEIGHT: 35px; COLOR: #fff; FONT-SIZE: 16px; FONT-WEIGHT: bold; PADDING-TOP: 5px
+}
+#loginForm .name {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; WIDTH: 80px; PADDING-RIGHT: 5px; HEIGHT: 20px; COLOR: #fff; PADDING-TOP: 0px
+}
+#loginForm .forget {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; HEIGHT: 20px; PADDING-TOP: 3px
+}
+#loginForm INPUT {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; LINE-HEIGHT: 20px; BACKGROUND-COLOR: #dcebed; HEIGHT: 20px; COLOR: #5276b2; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+#loginHelpinfo {
+	POSITION: absolute; TEXT-ALIGN: center; PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; WIDTH: 100%; BOTTOM: 5px; PADDING-RIGHT: 10px; COLOR: #5276b2; PADDING-TOP: 10px
+}
